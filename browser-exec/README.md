@@ -104,3 +104,11 @@ Set `MONGODB_URI` (and optionally `MONGODB_DB`, default `ownerorbit`). Collectio
 `action_runs` (unique `idempotencyKey`, index `tenantId+startedAt`) and `audit_events`
 (indexes `tenantId+ts`, `runId+ts`). Names are overridable via env to match the harness.
 `npm run db:check` pings Atlas and shows counts/latest docs without printing the URI.
+
+## OrderDesk backend (update)
+
+OrderDesk now persists through its own backend: `GET /api/state` (MongoDB database `ownerorbit`)
+and `PATCH /api/items/:id`, `PATCH /api/restaurant`. `readState` reads `/api/state` first and only
+falls back to `localStorage["orderdesk:v1"]` when the API is unavailable (the app's offline mode).
+Menu state is therefore shared across browsers; the persistent Playwright profile is no longer what
+makes changes stick.

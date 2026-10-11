@@ -1,6 +1,7 @@
 // ALL OrderDesk (middleware) UI knowledge lives here.
 // Mapped from https://orders-dashboard-eight-sepia.vercel.app (front-end-only mock;
-// state persists in localStorage key "orderdesk:v1" — there is no backend/API).
+// state persists via its backend GET /api/state + PATCH /api/items/:id; localStorage key
+// "orderdesk:v1" is only the offline fallback).
 import type { Page, Locator } from "playwright";
 
 export const BASE = (process.env.MIDDLEWARE_URL ?? "https://orders-dashboard-eight-sepia.vercel.app").replace(/\/$/, "");

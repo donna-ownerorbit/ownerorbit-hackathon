@@ -5,7 +5,8 @@ import { STATE_KEY, URLS, sel } from "./selectors.js";
 let ctx: BrowserContext | null = null;
 let opening: Promise<BrowserContext> | null = null;
 
-// IMPORTANT: OrderDesk keeps its data in localStorage, so we MUST use one persistent
+// NOTE: OrderDesk now persists to its own backend (/api/state); localStorage is only its offline
+// fallback. We still use one persistent
 // browser profile. A fresh context = fresh seed menu = changes "disappear".
 // The demo shows THIS browser window (HEADLESS=false); other people's browsers have their own copy.
 export async function getContext(): Promise<BrowserContext> {
@@ -50,11 +51,35 @@ export interface AppState {
   menuSyncedAt: number; accepting: boolean;
 }
 
-// Structured read of the app's own persisted state (source of truth for this mock).
+// Structured read of OrderDesk's persisted state.
+// OrderDesk now has a backend: GET /api/state returns the menu from its MongoDB ("db" mode), and the
+// UI saves through PATCH /api/items/:id and /api/restaurant. That backend is the source of truth.
+// If the API is unreachable, the app falls back to localStorage ("local" mode) — so do we.
 export async function readState(page: Page): Promise<AppState> {
-  const raw = await page.evaluate((k) => localStorage.getItem(k), STATE_KEY);
-  if (!raw) throw new Error("OrderDesk state not found in localStorage");
-  return JSON.parse(raw);
+  const res = await page.evaluate(async (k) => {
+    try {
+      const r = await fetch("/api/state", { cache: "no-store" });
+      if (r.ok) {
+        const st = await r.json();
+        if (st && Array.isArray(st.items)) {
+          return {
+            source: "db",
+            state: {
+              storeId: st.restaurant?.storeId,
+              accepting: st.restaurant?.accepting ?? true,
+              menuSyncedAt: st.restaurant?.menuSyncedAt ?? 0,
+              items: st.items,
+              categories: st.categories ?? [],
+            },
+          };
+        }
+      }
+    } catch { /* fall through to local mode */ }
+    const raw = localStorage.getItem(k);
+    return { source: "local", state: raw ? JSON.parse(raw) : null };
+  }, STATE_KEY);
+  if (!res.state) throw new Error("OrderDesk state not found (API and localStorage both empty)");
+  return res.state as AppState;
 }
 
 export async function findItem(page: Page, itemId: string): Promise<MenuItem> {
@@ -63,7 +88,7 @@ export async function findItem(page: Page, itemId: string): Promise<MenuItem> {
   return item;
 }
 
-// Poll until the app has persisted the expected change (React state -> localStorage).
+// Poll until the app has persisted the expected change (backend, or localStorage in local mode).
 export async function waitForState(page: Page, pred: (s: AppState) => boolean, timeout = 8000) {
   const start = Date.now();
   while (Date.now() - start < timeout) {
