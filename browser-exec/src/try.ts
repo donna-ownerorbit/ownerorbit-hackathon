@@ -5,6 +5,7 @@
 //   npx tsx src/try.ts middleware.push_provider_menus
 import { execute } from "./executor.js";
 import { closeBrowser } from "./tools/middlewareBrowser.js";
+import { closeTracing } from "./trace.js";
 
 const [skillId, itemId, price, approved] = process.argv.slice(2);
 const inputs: Record<string, unknown> = itemId ? { itemId } : {};
@@ -18,7 +19,9 @@ const result = await execute({
   skillId,
   inputs,
   approvalId: approved ? "manual-test" : undefined,
+  message: process.env.MSG, // e.g. MSG="nuggets are out" shows the owner text in Raindrop
 });
 console.log(JSON.stringify(result, null, 2));
+await closeTracing();
 await closeBrowser();
 process.exit(0);

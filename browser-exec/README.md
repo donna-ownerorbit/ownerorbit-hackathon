@@ -74,3 +74,33 @@ pushed snapshots requires the mock storefront upgrade described in the spec.
 
 See [AGENT_REVIEW.md](AGENT_REVIEW.md) for the detailed review and remaining integration
 work. The two spec files are identical.
+
+## Raindrop tracing + evals
+
+`src/trace.ts` sends one Raindrop interaction per executed request (`event: "skill_execution"`,
+`eventId = runId`). Input = owner message (`ExecuteRequest.message`, optional) or skill + inputs;
+output = the reply text. Properties: skill id/version, tenant, status, attempts, per-step spans,
+provider checks. Attachments: before, after (fresh re-read), eval summary.
+
+Evals are deterministic (no LLM judge) and sent as signals `eval_<name>_pass|fail`:
+
+| Eval | Pass when |
+|---|---|
+| `honest_claim` | "Done" was only claimed when an independent re-read confirmed it |
+| `task_completed` | VERIFIED or ALREADY_DONE |
+| `first_try` | attempts ≤ 1 |
+| `fast_enough` | under 15 s |
+| `providers_consistent` | DoorDash / Uber Eats / Grubhub match (when confirmation ran) |
+
+NEEDS_HUMAN/FAILED runs also send `selfDiagnose` (`repeatedly_broken_tool` when an execute/verify
+step failed). Without `RAINDROP_WRITE_KEY`, traces only print to the console.
+
+Demo loop: `npm run demo:good` → `npm run demo:reset` → `npm run demo:broken` (simulated UI change,
+honest NEEDS_HUMAN, flagged in Raindrop) → bump the status skills to `version: 2` → `npm run demo:good`.
+
+## MongoDB
+
+Set `MONGODB_URI` (and optionally `MONGODB_DB`, default `ownerorbit`). Collections:
+`action_runs` (unique `idempotencyKey`, index `tenantId+startedAt`) and `audit_events`
+(indexes `tenantId+ts`, `runId+ts`). Names are overridable via env to match the harness.
+`npm run db:check` pings Atlas and shows counts/latest docs without printing the URI.
