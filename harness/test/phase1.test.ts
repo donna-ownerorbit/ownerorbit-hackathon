@@ -2,21 +2,24 @@ import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
 import type { AddressInfo } from "node:net";
 import type { Server } from "node:http";
-import { MongoMemoryServer } from "mongodb-memory-server";
 import { collections, connect, disconnect } from "../src/db/mongodb.js";
 import { DEMO_IDS, seed } from "../src/db/seed.js";
 import { createApp } from "../src/server.js";
 
 // Uses TEST_MONGODB_URI (e.g. a local docker mongo) when set, otherwise an in-memory MongoDB.
-let mongo: MongoMemoryServer | undefined;
+let mongo: { getUri(): string; stop(): Promise<unknown> } | undefined;
 let server: Server;
 let base: string;
 
 before(async () => {
   let uri = process.env.TEST_MONGODB_URI;
   if (!uri) {
-    mongo = await MongoMemoryServer.create();
-    uri = mongo.getUri();
+    // Optional dev tool: `npm i -D mongodb-memory-server` to run tests without a MongoDB.
+    const pkg = "mongodb-memory-server";
+    const { MongoMemoryServer } = await import(pkg);
+    const memory = await MongoMemoryServer.create();
+    mongo = memory;
+    uri = memory.getUri();
   }
   await connect(uri, `ownerorbit_test_${Date.now()}`);
   await seed({

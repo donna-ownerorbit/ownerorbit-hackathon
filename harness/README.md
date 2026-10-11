@@ -31,6 +31,6 @@ curl -X POST localhost:3000/messages/inbound -H 'content-type: application/json'
   -d '{"from":"+15555550100","text":"Mark chicken nuggets out of stock.","messageId":"test-1"}'
 ```
 
-Tests: `npm test` (in-memory MongoDB), or `TEST_MONGODB_URI=mongodb://127.0.0.1:27017 npm test`.
+Tests: `TEST_MONGODB_URI=mongodb://127.0.0.1:27017 npm test`.
 
 All code in this repo was written during the hackathon. External infrastructure: MongoDB Atlas, BlueBubbles, Orders.co sandbox.
