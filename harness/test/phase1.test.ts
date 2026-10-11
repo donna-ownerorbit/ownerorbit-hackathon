@@ -60,7 +60,7 @@ test("known owner is accepted and an action_run is stored", async () => {
   const run = await collections.actionRuns().findOne({ idempotencyKey: "msg-1" });
   assert.equal(run?.status, "failed"); // browser-exec not running in this test -> honest failure
   assert.equal(run?.tenantId, DEMO_IDS.tenantId);
-  assert.deepEqual(run?.params, { itemName: "chicken nuggets", available: false });
+  assert.deepEqual(run?.params, { itemId: "kids-chicken-nuggets-with-fries", available: false });
 });
 
 test("email handle is matched case-insensitively", async () => {
@@ -137,6 +137,47 @@ test("BlueBubbles webhook runs the skill and replies over iMessage", async () =>
   } finally {
     delete process.env.SKILL_URL;
     delete process.env.BLUEBUBBLES_URL;
+    fake.close();
+  }
+});
+
+test("price change: quote, YES approval, then verified execution", async () => {
+  const { createServer } = await import("node:http");
+  const calls: any[] = [];
+  const fake = createServer((req, res) => {
+    let raw = "";
+    req.on("data", (c) => (raw += c));
+    req.on("end", () => {
+      const body = JSON.parse(raw);
+      calls.push(body);
+      res.setHeader("content-type", "application/json");
+      const before = { name: "Kids Chicken Nuggets", price: 6.99 };
+      if (!body.approvalId) return res.end(JSON.stringify({ status: "NEEDS_APPROVAL", message: "Owner approval required.", before, evidence: [], attempts: 0 }));
+      res.end(JSON.stringify({ status: "VERIFIED", message: "Done. Verified.", before, after: { ...before, price: body.inputs.newPrice }, evidence: [], attempts: 1 }));
+    });
+  }).listen(0);
+  process.env.SKILL_URL = `http://127.0.0.1:${(fake.address() as AddressInfo).port}`;
+  try {
+    const quote = await inbound({ from: "+15555550100", text: "change price of nuggets to $1 higher", messageId: "p-1" });
+    assert.equal(quote.status, 202);
+    const q = await quote.json();
+    assert.equal(q.oldPrice, 6.99);
+    assert.equal(q.newPrice, 7.99);
+    assert.equal(calls.length, 1);
+
+    const yes = await inbound({ from: "+15555550100", text: "YES", messageId: "p-2" });
+    assert.equal(yes.status, 200);
+    assert.equal((await yes.json()).status, "verified");
+    assert.equal(calls[1].skillId, "middleware.change_price");
+    assert.deepEqual(calls[1].inputs, { itemId: "kids-chicken-nuggets-with-fries", newPrice: 7.99 });
+    assert.ok(calls[1].approvalId);
+    assert.ok(calls[1].actor.permissions.includes("pricing.write"));
+
+    const again = await inbound({ from: "+15555550100", text: "yes", messageId: "p-3" });
+    assert.equal((await again.json()).error, "nothing_pending");
+    assert.equal(calls.length, 2);
+  } finally {
+    delete process.env.SKILL_URL;
     fake.close();
   }
 });

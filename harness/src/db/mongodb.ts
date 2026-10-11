@@ -37,7 +37,7 @@ export interface Membership {
   permissions: Permission[];
 }
 
-export type ActionRunStatus = "pending" | "running" | "verified" | "failed" | "denied";
+export type ActionRunStatus = "pending" | "running" | "awaiting_approval" | "verified" | "failed" | "denied";
 
 export interface ActionRun {
   _id?: ObjectId;

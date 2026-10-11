@@ -49,7 +49,7 @@ export async function seed(opts: SeedOptions): Promise<void> {
         userId: ownerId,
         restaurantId,
         role: "owner",
-        permissions: ["menu.write", "objectives.manage"],
+        permissions: ["menu.write", "pricing.write", "objectives.manage"],
       },
     },
     { upsert: true },
