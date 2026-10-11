@@ -37,11 +37,15 @@ async function db() {
   connecting = (async () => {
     const client = await new MongoClient(process.env.MONGODB_URI!).connect();
     try {
-      const d = client.db("ownerorbit");
-      const actionRuns = d.collection("action_runs");
+      const d = client.db(process.env.MONGODB_DB || "ownerorbit");
+      const actionRuns = d.collection(process.env.MONGODB_RUNS_COLLECTION || "action_runs");
+      const auditEvents = d.collection(process.env.MONGODB_AUDIT_COLLECTION || "audit_events");
       await actionRuns.createIndex({ idempotencyKey: 1 }, { unique: true });
+      await actionRuns.createIndex({ tenantId: 1, startedAt: -1 });
+      await auditEvents.createIndex({ tenantId: 1, ts: -1 });
+      await auditEvents.createIndex({ runId: 1, ts: 1 });
       runs = actionRuns;
-      audit = d.collection("audit_log");
+      audit = auditEvents;
       return { runs, audit };
     } catch (e) {
       await client.close();
@@ -101,7 +105,7 @@ export async function execute(req: ExecuteRequest): Promise<ExecuteResult> {
   await log("execution.started", { skillId: skill.id, inputs: input });
 
   return withTenantLock(req.tenantId, () => withBrowserLock(() =>
-    trace(req.runId, skill.id, async (span) => {
+    trace(req, skill, async (span) => {
       let page: Awaited<ReturnType<typeof newPage>> | undefined;
       const evidence: string[] = [];
       let attempts = 0;

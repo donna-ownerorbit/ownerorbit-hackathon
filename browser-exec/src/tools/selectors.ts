@@ -29,7 +29,10 @@ export const sel = {
     sel.itemName(p, name).locator('xpath=ancestor::*[.//button[contains(@class,"status-btn")]][1]'),
   // Status dropdown button in the row; its title attribute is the current status label
   statusBtn: (row: Locator) => row.locator("button.status-btn"),
-  statusOption: (p: Page, label: string) => p.locator("button.menu-item", { hasText: label }),
+  // DEMO: SIMULATE_UI_CHANGE=true pretends OrderDesk renamed its status options, so the status
+  // skills fail honestly (NEEDS_HUMAN) and Raindrop flags it. Unset it + bump skill version = "fix".
+  statusOption: (p: Page, label: string) =>
+    p.locator("button.menu-item", { hasText: process.env.SIMULATE_UI_CHANGE === "true" ? `${label} (renamed)` : label }),
 
   // Item editor (opens when the item name is clicked)
   priceInput: (p: Page) =>

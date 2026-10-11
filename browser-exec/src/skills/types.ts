@@ -26,6 +26,7 @@ export interface ExecuteRequest {
   skillId: string;
   inputs: Record<string, unknown>;
   approvalId?: string;
+  message?: string;               // owner's original text, for traces/evals only (optional)
 }
 
 export const executeRequestSchema = schema.object({
@@ -40,6 +41,7 @@ export const executeRequestSchema = schema.object({
   skillId: schema.string().min(1),
   inputs: schema.record(schema.unknown()),
   approvalId: schema.string().trim().min(1).optional(),
+  message: schema.string().max(2000).optional(),
 });
 
 export interface ExecuteResult {

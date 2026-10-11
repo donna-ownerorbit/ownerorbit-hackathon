@@ -1,5 +1,6 @@
 import express from "express";
 import { execute } from "./executor.js";
+import { closeTracing } from "./trace.js";
 import { registry } from "./skills/menuSkills.js";
 import { confirmAcrossProviders } from "./confirmation/confirm.js";
 import { newPage, findItem, gotoMenu, withBrowserLock } from "./tools/middlewareBrowser.js";
@@ -60,4 +61,5 @@ app.post("/confirm", async (req, res) => {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const port = Number(process.env.PORT ?? 4001);
   app.listen(port, () => console.log(`browser-exec on :${port}`));
+  process.on("SIGINT", async () => { await closeTracing(); process.exit(0); });
 }
