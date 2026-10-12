@@ -1,0 +1,6836 @@
+{
+ "mode": "db",
+ "readAt": 1791758874923,
+ "restaurant": {
+  "storeId": "hayward",
+  "accepting": true,
+  "pausedUntil": null,
+  "menuSyncedAt": 1791664670547
+ },
+ "categories": [
+  {
+   "id": "starters",
+   "description": "Shareable small plates to start your meal.",
+   "links": 4,
+   "name": "Starters",
+   "status": "available"
+  },
+  {
+   "id": "wraps",
+   "description": "Make it a meal (fries + soda) for $4.99.",
+   "links": 4,
+   "name": "Wraps",
+   "status": "available"
+  },
+  {
+   "id": "entrees",
+   "description": "Comes with hummus/special sauce, salad, pita & rice.",
+   "links": 4,
+   "name": "Entrees",
+   "status": "available"
+  },
+  {
+   "id": "burgers",
+   "description": "Make it a meal (fries + soda) for $4.99.",
+   "links": 4,
+   "name": "Burgers",
+   "status": "available"
+  },
+  {
+   "id": "kids",
+   "description": "Little portions for little appetites.",
+   "links": 3,
+   "name": "Kids Meal",
+   "status": "available"
+  },
+  {
+   "id": "sides",
+   "description": "",
+   "links": 4,
+   "name": "Sides",
+   "status": "available"
+  }
+ ],
+ "items": [
+  {
+   "id": "starters-dolma",
+   "barcodes": [
+    "SKU-40EDF35D"
+   ],
+   "categoryId": "starters",
+   "description": "A delightful appetizer of vegetables delicately stuffed in tender grape leaves, seasoned with aromatic herbs.",
+   "image": "/food/dolma.jpg",
+   "modifierGroupIds": [],
+   "name": "Dolma",
+   "orders30d": 231,
+   "price": 8.99,
+   "sizes": [],
+   "sku": "SKU-40EDF35D",
+   "status": "available",
+   "stock": -159,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-baba-ganoush",
+   "barcodes": [
+    "SKU-A60AD0A8"
+   ],
+   "categoryId": "starters",
+   "description": "A smooth, smoky roasted eggplant dip, perfect for pairing with warm pita bread.",
+   "image": "/food/baba-ganoush.jpg",
+   "modifierGroupIds": [],
+   "name": "Baba Ganoush",
+   "orders30d": 154,
+   "price": 8.99,
+   "sizes": [],
+   "sku": "SKU-A60AD0A8",
+   "status": "available",
+   "stock": 112,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-chicken-tenders-with-fries",
+   "barcodes": [
+    "SKU-98E0EED2"
+   ],
+   "categoryId": "starters",
+   "description": "",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Chicken Tenders with Fries",
+   "orders30d": 50,
+   "price": 14.99,
+   "sizes": [],
+   "sku": "SKU-98E0EED2",
+   "status": "available",
+   "stock": 154,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-fried-calamari",
+   "barcodes": [
+    "SKU-ADF75DC1"
+   ],
+   "categoryId": "starters",
+   "description": "",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Fried Calamari",
+   "orders30d": 111,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-ADF75DC1",
+   "status": "available",
+   "stock": 41,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-quesadilla",
+   "barcodes": [
+    "SKU-F9999DE9"
+   ],
+   "categoryId": "starters",
+   "description": "A mouth-watering quesadilla stuffed with melted cheese and your choice of chicken, gyro or veggie.",
+   "image": null,
+   "modifierGroupIds": [
+    "quesadilla-protein"
+   ],
+   "name": "Quesadilla",
+   "orders30d": 104,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-F9999DE9",
+   "status": "available",
+   "stock": 177,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-wings-8-pcs",
+   "barcodes": [
+    "SKU-F01B2C4E"
+   ],
+   "categoryId": "starters",
+   "description": "Eight crispy chicken wings tossed in your choice of BBQ, teriyaki, or buffalo sauce.",
+   "image": null,
+   "modifierGroupIds": [
+    "wing-sauce"
+   ],
+   "name": "Wings (8 pcs)",
+   "orders30d": 219,
+   "price": 17.99,
+   "sizes": [],
+   "sku": "SKU-F01B2C4E",
+   "status": "available",
+   "stock": 54,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "starters-butterfly-shrimp-with-fries",
+   "barcodes": [
+    "SKU-22BC31AE"
+   ],
+   "categoryId": "starters",
+   "description": "Golden butterflied shrimp fried crisp and served with a side of fries.",
+   "image": null,
+   "isNew": true,
+   "modifierGroupIds": [],
+   "name": "Butterfly Shrimp with Fries",
+   "orders30d": 68,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-22BC31AE",
+   "status": "available",
+   "stock": 150,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-falafel-wrap",
+   "barcodes": [
+    "SKU-E68BC7FD"
+   ],
+   "categoryId": "wraps",
+   "description": "Crispy house-made falafel, lettuce, tomato, pickles and tahini wrapped in warm lavash. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Falafel Wrap",
+   "orders30d": 341,
+   "price": 10.99,
+   "sizes": [],
+   "sku": "SKU-E68BC7FD",
+   "status": "available",
+   "stock": 101,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-gyro-wrap",
+   "barcodes": [
+    "SKU-78CD69D1"
+   ],
+   "categoryId": "wraps",
+   "description": "Thin-sliced seasoned gyro meat with onions, tomato and creamy tzatziki. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Gyro Wrap",
+   "orders30d": 388,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-78CD69D1",
+   "status": "available",
+   "stock": 89,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-chicken-wrap",
+   "barcodes": [
+    "SKU-99148B5B"
+   ],
+   "categoryId": "wraps",
+   "description": "Marinated grilled chicken with garlic sauce, pickles and fresh veggies. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Chicken Wrap",
+   "orders30d": 171,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-99148B5B",
+   "status": "available",
+   "stock": 163,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-jumbo-wrap",
+   "barcodes": [
+    "SKU-497510DF"
+   ],
+   "categoryId": "wraps",
+   "description": "Our biggest wrap, loaded with a double portion of your favorite protein. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Jumbo Wrap",
+   "orders30d": 48,
+   "price": 13.99,
+   "sizes": [],
+   "sku": "SKU-497510DF",
+   "status": "available",
+   "stock": 199,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-club-wrap",
+   "barcodes": [
+    "SKU-84D3C1BC"
+   ],
+   "categoryId": "wraps",
+   "description": "Grilled chicken, beef bacon, lettuce, tomato and ranch. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Club Wrap",
+   "orders30d": 55,
+   "price": 13.99,
+   "sizes": [],
+   "sku": "SKU-84D3C1BC",
+   "status": "available",
+   "stock": 164,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "wraps-philly-wrap",
+   "barcodes": [
+    "SKU-3C1F55DA"
+   ],
+   "categoryId": "wraps",
+   "description": "Shaved steak, grilled peppers and onions with melted provolone. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal",
+    "extras"
+   ],
+   "name": "Philly Wrap",
+   "orders30d": 73,
+   "price": 13.99,
+   "sizes": [],
+   "sku": "SKU-3C1F55DA",
+   "status": "available",
+   "stock": 194,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "entrees-chicken-kabab",
+   "barcodes": [
+    "SKU-3CA08E99"
+   ],
+   "categoryId": "entrees",
+   "description": "Two skewers of saffron-marinated chicken, charbroiled to order. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Chicken Kabab",
+   "orders30d": 244,
+   "price": 22.99,
+   "sizes": [],
+   "sku": "SKU-3CA08E99",
+   "status": "available",
+   "stock": 65,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-beef-kabab",
+   "barcodes": [
+    "SKU-DAA7670C"
+   ],
+   "categoryId": "entrees",
+   "description": "Tender cubes of seasoned beef grilled over open flame. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Beef Kabab",
+   "orders30d": 100,
+   "price": 24.99,
+   "sizes": [],
+   "sku": "SKU-DAA7670C",
+   "status": "available",
+   "stock": 180,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-lamb-kabab",
+   "barcodes": [
+    "SKU-C194A3B2"
+   ],
+   "categoryId": "entrees",
+   "description": "Juicy marinated lamb skewers with grilled tomato and onion. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Lamb Kabab",
+   "orders30d": 86,
+   "price": 24.99,
+   "sizes": [],
+   "sku": "SKU-C194A3B2",
+   "status": "available",
+   "stock": 122,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-chapli-kabab",
+   "barcodes": [
+    "SKU-81DFB93F"
+   ],
+   "categoryId": "entrees",
+   "description": "Spiced minced beef patties, pan-seared Peshawar style. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Chapli Kabab",
+   "orders30d": 33,
+   "price": 19.99,
+   "sizes": [],
+   "sku": "SKU-81DFB93F",
+   "status": "available",
+   "stock": 135,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-combo-kabab",
+   "barcodes": [
+    "SKU-2013DFF0"
+   ],
+   "categoryId": "entrees",
+   "description": "Choice of 1. Chapli & beef tikka or 2. Chicken & lamb. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "combo-choice",
+    "entree-sauce"
+   ],
+   "name": "Combo Kabab",
+   "orders30d": 297,
+   "price": 34.99,
+   "sizes": [],
+   "sku": "SKU-2013DFF0",
+   "status": "available",
+   "stock": 184,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-bbq-lamb-chops",
+   "barcodes": [
+    "SKU-9C423E18"
+   ],
+   "categoryId": "entrees",
+   "description": "Four bone-in lamb chops marinated overnight and grilled to perfection. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": "/food/bbq-lamb-chops.jpg",
+   "modifierGroupIds": [
+    "entree-sauce"
+   ],
+   "name": "BBQ Lamb Chops",
+   "orders30d": 188,
+   "price": 34.99,
+   "sizes": [],
+   "sku": "SKU-9C423E18",
+   "status": "available",
+   "stock": 128,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-falafel-platter",
+   "barcodes": [
+    "SKU-2459DDEA"
+   ],
+   "categoryId": "entrees",
+   "description": "Six pieces of crispy falafel with tahini. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Falafel Platter",
+   "orders30d": 88,
+   "price": 19.99,
+   "sizes": [],
+   "sku": "SKU-2459DDEA",
+   "status": "available",
+   "stock": 50,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-chicken-platter",
+   "barcodes": [
+    "SKU-D80DE808"
+   ],
+   "categoryId": "entrees",
+   "description": "Sliced chicken shawarma with garlic toum. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Chicken Platter",
+   "orders30d": 412,
+   "price": 21.99,
+   "sizes": [],
+   "sku": "SKU-D80DE808",
+   "status": "available",
+   "stock": 144,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-gyro-platter",
+   "barcodes": [
+    "SKU-3F1E75E0"
+   ],
+   "categoryId": "entrees",
+   "description": "A generous pile of sliced gyro with tzatziki. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Gyro Platter",
+   "orders30d": 205,
+   "price": 21.99,
+   "sizes": [],
+   "sku": "SKU-3F1E75E0",
+   "status": "available",
+   "stock": 104,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-combo-platter",
+   "barcodes": [
+    "SKU-C7E0ADD9"
+   ],
+   "categoryId": "entrees",
+   "description": "Half chicken shawarma, half gyro. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Combo Platter",
+   "orders30d": 99,
+   "price": 24.99,
+   "sizes": [],
+   "sku": "SKU-C7E0ADD9",
+   "status": "available",
+   "stock": 193,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "entrees-flame-platter",
+   "barcodes": [
+    "SKU-89D59E78"
+   ],
+   "categoryId": "entrees",
+   "description": "Our signature mixed grill — chicken, beef and kofta. Comes with hummus or special sauce, salad, pita & rice.",
+   "image": null,
+   "modifierGroupIds": [
+    "entree-sauce",
+    "extras"
+   ],
+   "name": "Flame Platter",
+   "orders30d": 149,
+   "price": 28.99,
+   "sizes": [],
+   "sku": "SKU-89D59E78",
+   "status": "available",
+   "stock": 128,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Plate"
+  },
+  {
+   "id": "burgers-classic-hamburger",
+   "barcodes": [
+    "SKU-C4F5DED2"
+   ],
+   "categoryId": "burgers",
+   "description": "Quarter-pound halal beef patty, lettuce, tomato, onion and house sauce. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Classic Hamburger",
+   "orders30d": 54,
+   "price": 9.99,
+   "sizes": [],
+   "sku": "SKU-C4F5DED2",
+   "status": "available",
+   "stock": 58,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-classic-cheese-burger",
+   "barcodes": [
+    "SKU-1431F7DC"
+   ],
+   "categoryId": "burgers",
+   "description": "Our classic burger topped with melted American cheese. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Classic Cheese Burger",
+   "orders30d": 125,
+   "price": 10.99,
+   "sizes": [],
+   "sku": "SKU-1431F7DC",
+   "status": "available",
+   "stock": 196,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-veggie-burger",
+   "barcodes": [
+    "SKU-F392F94D"
+   ],
+   "categoryId": "burgers",
+   "description": "House-made veggie patty with fresh toppings on a toasted bun. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Veggie Burger",
+   "orders30d": 51,
+   "price": 9.99,
+   "sizes": [],
+   "sku": "SKU-F392F94D",
+   "status": "available",
+   "stock": 85,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-hawaiian-burger",
+   "barcodes": [
+    "SKU-241395B4"
+   ],
+   "categoryId": "burgers",
+   "description": "Grilled pineapple, teriyaki glaze and Swiss cheese. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Hawaiian Burger",
+   "orders30d": 126,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-241395B4",
+   "status": "available",
+   "stock": 124,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-crispy-chicken-burger",
+   "barcodes": [
+    "SKU-2D7A7D46"
+   ],
+   "categoryId": "burgers",
+   "description": "Buttermilk fried chicken breast, slaw and spicy mayo. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Crispy Chicken Burger",
+   "orders30d": 39,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-2D7A7D46",
+   "status": "available",
+   "stock": 142,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-texan-burger",
+   "barcodes": [
+    "SKU-EED85ADC"
+   ],
+   "categoryId": "burgers",
+   "description": "BBQ sauce, onion rings, pepper jack and jalapeños. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Texan Burger",
+   "orders30d": 56,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-EED85ADC",
+   "status": "available",
+   "stock": 164,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-bacon-cheddar-burger",
+   "barcodes": [
+    "SKU-4B9BDC67"
+   ],
+   "categoryId": "burgers",
+   "description": "Beef bacon, sharp cheddar and smoky aioli. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Bacon Cheddar Burger",
+   "orders30d": 76,
+   "price": 14.99,
+   "sizes": [],
+   "sku": "SKU-4B9BDC67",
+   "status": "available",
+   "stock": 143,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-avocado-ranch-burger",
+   "barcodes": [
+    "SKU-5237F2A8"
+   ],
+   "categoryId": "burgers",
+   "description": "Fresh avocado, ranch and crisp lettuce. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Avocado Ranch Burger",
+   "orders30d": 91,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-5237F2A8",
+   "status": "available",
+   "stock": 112,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-salmon-burger",
+   "barcodes": [
+    "SKU-257F62C0"
+   ],
+   "categoryId": "burgers",
+   "description": "Seared salmon patty with lemon-dill sauce. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Salmon Burger",
+   "orders30d": 60,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-257F62C0",
+   "status": "available",
+   "stock": 104,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-flame-burger",
+   "barcodes": [
+    "SKU-EE043E4B"
+   ],
+   "categoryId": "burgers",
+   "description": "Double patty, ghost-pepper cheese, fried jalapeños and flame sauce. Not for the faint of heart. Make it a meal with fries + soda for $4.99.",
+   "image": "/food/flame-burger.jpg",
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Flame Burger",
+   "orders30d": 266,
+   "price": 16.99,
+   "sizes": [],
+   "sku": "SKU-EE043E4B",
+   "status": "available",
+   "stock": 179,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "burgers-double-cheeseburger",
+   "barcodes": [
+    "SKU-A8500654"
+   ],
+   "categoryId": "burgers",
+   "description": "Two smashed patties with double American cheese. Make it a meal with fries + soda for $4.99.",
+   "image": null,
+   "modifierGroupIds": [
+    "make-it-a-meal"
+   ],
+   "name": "Double Cheeseburger",
+   "orders30d": 96,
+   "price": 12.99,
+   "sizes": [],
+   "sku": "SKU-A8500654",
+   "status": "available",
+   "stock": 188,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "kids-chicken-nuggets-with-fries",
+   "barcodes": [
+    "SKU-B0A2739D"
+   ],
+   "categoryId": "kids",
+   "description": "Crispy golden chicken nuggets served with fries and ketchup.",
+   "image": "/food/chicken-nuggets.jpg",
+   "modifierGroupIds": [],
+   "name": "Chicken Nuggets with Fries",
+   "orders30d": 131,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-B0A2739D",
+   "status": "available",
+   "stock": 165,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "kids-cheese-pizza-with-fries",
+   "barcodes": [
+    "SKU-42179B5A"
+   ],
+   "categoryId": "kids",
+   "description": "Personal cheese pizza with a side of fries.",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Cheese Pizza with Fries",
+   "orders30d": 39,
+   "price": 11.99,
+   "sizes": [],
+   "sku": "SKU-42179B5A",
+   "status": "available",
+   "stock": 194,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Piece"
+  },
+  {
+   "id": "sides-side-of-falafel",
+   "barcodes": [
+    "SKU-2404DA91"
+   ],
+   "categoryId": "sides",
+   "description": "Three pieces of crispy falafel.",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Side of Falafel",
+   "orders30d": 50,
+   "price": 5.99,
+   "sizes": [],
+   "sku": "SKU-2404DA91",
+   "status": "available",
+   "stock": 153,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Order"
+  },
+  {
+   "id": "sides-fries",
+   "barcodes": [
+    "SKU-E6A02D39"
+   ],
+   "categoryId": "sides",
+   "description": "",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Fries",
+   "orders30d": 176,
+   "price": 3.99,
+   "sizes": [
+    {
+     "id": "fries-basket",
+     "name": "Basket",
+     "price": 6.99
+    }
+   ],
+   "sku": "SKU-E6A02D39",
+   "status": "available",
+   "stock": 97,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Order"
+  },
+  {
+   "id": "sides-curly-fries",
+   "barcodes": [
+    "SKU-D61E1925"
+   ],
+   "categoryId": "sides",
+   "description": "",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Curly Fries",
+   "orders30d": 125,
+   "price": 4.99,
+   "sizes": [
+    {
+     "id": "curly-basket",
+     "name": "Basket",
+     "price": 8.99
+    }
+   ],
+   "sku": "SKU-D61E1925",
+   "status": "available",
+   "stock": 141,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Order"
+  },
+  {
+   "id": "sides-onion-rings",
+   "barcodes": [
+    "SKU-5EF78D09"
+   ],
+   "categoryId": "sides",
+   "description": "",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Onion Rings",
+   "orders30d": 91,
+   "price": 6.99,
+   "sizes": [],
+   "sku": "SKU-5EF78D09",
+   "status": "available",
+   "stock": 81,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Order"
+  },
+  {
+   "id": "sides-side-of-hummus",
+   "barcodes": [
+    "SKU-7AB19429"
+   ],
+   "categoryId": "sides",
+   "description": "Creamy chickpea hummus with olive oil, served with pita bread.",
+   "image": null,
+   "modifierGroupIds": [],
+   "name": "Side of Hummus",
+   "orders30d": 62,
+   "price": 6.99,
+   "sizes": [],
+   "sku": "SKU-7AB19429",
+   "status": "available",
+   "stock": 113,
+   "tax": "",
+   "trackInventory": true,
+   "unit": "Order"
+  }
+ ],
+ "modifierGroups": [
+  {
+   "id": "make-it-a-meal",
+   "max": 1,
+   "min": 0,
+   "name": "Make it a Meal",
+   "options": [
+    {
+     "id": "m1",
+     "name": "Fries + Soda",
+     "price": 4.99
+    }
+   ],
+   "required": false
+  },
+  {
+   "id": "quesadilla-protein",
+   "max": 1,
+   "min": 1,
+   "name": "Quesadilla Protein",
+   "options": [
+    {
+     "id": "q1",
+     "name": "Chicken",
+     "price": 0
+    },
+    {
+     "id": "q2",
+     "name": "Gyro",
+     "price": 0
+    },
+    {
+     "id": "q3",
+     "name": "Veggie",
+     "price": 0
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "wing-sauce",
+   "max": 1,
+   "min": 1,
+   "name": "Wing Sauce",
+   "options": [
+    {
+     "id": "w1",
+     "name": "BBQ",
+     "price": 0
+    },
+    {
+     "id": "w2",
+     "name": "Teriyaki",
+     "price": 0
+    },
+    {
+     "id": "w3",
+     "name": "Buffalo",
+     "price": 0
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "combo-choice",
+   "max": 1,
+   "min": 1,
+   "name": "Combo Kabab Choice",
+   "options": [
+    {
+     "id": "c1",
+     "name": "Chapli & Beef Tikka",
+     "price": 0
+    },
+    {
+     "id": "c2",
+     "name": "Chicken & Lamb",
+     "price": 0
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "entree-sauce",
+   "max": 1,
+   "min": 1,
+   "name": "Entree Sauce",
+   "options": [
+    {
+     "id": "e1",
+     "name": "Hummus",
+     "price": 0
+    },
+    {
+     "id": "e2",
+     "name": "Special Sauce",
+     "price": 0
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "extras",
+   "max": 5,
+   "min": 0,
+   "name": "Add Extras",
+   "options": [
+    {
+     "id": "x1",
+     "name": "Extra Garlic Sauce",
+     "price": 0.99
+    },
+    {
+     "id": "x2",
+     "name": "Extra Pita",
+     "price": 1.49
+    },
+    {
+     "id": "x3",
+     "name": "Add Feta",
+     "price": 1.99
+    },
+    {
+     "id": "x4",
+     "name": "Add Falafel (2 pc)",
+     "price": 2.99
+    }
+   ],
+   "required": false
+  }
+ ],
+ "orders": [
+  {
+   "id": "o0",
+   "courier": "Tina",
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Chapli Kabab",
+     "qty": 1,
+     "price": 19.99,
+     "note": null
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8243A",
+   "phone": "(510) 555-2775",
+   "placedAt": 1791758210246,
+   "provider": "doordash",
+   "status": "new",
+   "storeId": "hayward",
+   "subtotal": 52.97,
+   "tax": 5.69,
+   "tip": 9.25,
+   "total": 67.91,
+   "type": "Delivery"
+  },
+  {
+   "id": "o1",
+   "courier": "Brandon",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 2,
+     "price": 16.99,
+     "note": null
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8242B",
+   "phone": "(510) 555-2556",
+   "placedAt": 1791758030246,
+   "provider": "doordash",
+   "status": "new",
+   "storeId": "hayward",
+   "subtotal": 86.95,
+   "tax": 9.35,
+   "tip": 13.31,
+   "total": 109.61,
+   "type": "Delivery"
+  },
+  {
+   "id": "o2",
+   "courier": "Rahul",
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Salmon Burger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Dolma",
+     "qty": 2,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8241C",
+   "phone": "(510) 555-3732",
+   "placedAt": 1791757850246,
+   "provider": "ubereats",
+   "status": "new",
+   "storeId": "hayward",
+   "subtotal": 30.97,
+   "tax": 3.33,
+   "tip": 5.1,
+   "total": 39.4,
+   "type": "Delivery"
+  },
+  {
+   "id": "o3",
+   "courier": null,
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8240D",
+   "phone": "(510) 555-1142",
+   "placedAt": 1791757670246,
+   "provider": "grubhub",
+   "status": "preparing",
+   "storeId": "hayward",
+   "subtotal": 102.95,
+   "tax": 11.07,
+   "tip": 0,
+   "total": 114.02,
+   "type": "Pickup"
+  },
+  {
+   "id": "o4",
+   "courier": "Miguel",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Tenders with Fries",
+     "qty": 1,
+     "price": 14.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8239E",
+   "phone": "(510) 555-8396",
+   "placedAt": 1791756830246,
+   "provider": "doordash",
+   "status": "preparing",
+   "storeId": "hayward",
+   "subtotal": 49.98,
+   "tax": 5.37,
+   "tip": 5.9,
+   "total": 61.25,
+   "type": "Delivery"
+  },
+  {
+   "id": "o5",
+   "courier": "Tina",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8238F",
+   "phone": "(510) 555-4886",
+   "placedAt": 1791756590246,
+   "provider": "grubhub",
+   "status": "preparing",
+   "storeId": "hayward",
+   "subtotal": 67.96,
+   "tax": 7.31,
+   "tip": 13.55,
+   "total": 88.82,
+   "type": "Delivery"
+  },
+  {
+   "id": "o6",
+   "courier": "Rahul",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Bacon Cheddar Burger",
+     "qty": 1,
+     "price": 14.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8237G",
+   "phone": "(510) 555-2605",
+   "placedAt": 1791756350246,
+   "provider": "doordash",
+   "status": "ready",
+   "storeId": "hayward",
+   "subtotal": 27.98,
+   "tax": 3.01,
+   "tip": 3.16,
+   "total": 34.15,
+   "type": "Delivery"
+  },
+  {
+   "id": "o7",
+   "courier": "Brandon",
+   "customer": "Omar H.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Gyro Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8236H",
+   "phone": "(510) 555-2182",
+   "placedAt": 1791756110246,
+   "provider": "grubhub",
+   "status": "ready",
+   "storeId": "hayward",
+   "subtotal": 54.97,
+   "tax": 5.91,
+   "tip": 9.85,
+   "total": 70.73,
+   "type": "Delivery"
+  },
+  {
+   "id": "o8",
+   "courier": "Miguel",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Veggie Burger",
+     "qty": 1,
+     "price": 9.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8235I",
+   "phone": "(510) 555-2656",
+   "placedAt": 1791755870246,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 9.99,
+   "tax": 1.07,
+   "tip": 1.6,
+   "total": 12.66,
+   "type": "Delivery"
+  },
+  {
+   "id": "o9",
+   "courier": "Andre",
+   "customer": "Omar H.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8234J",
+   "phone": "(510) 555-4909",
+   "placedAt": 1791739597170.1226,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 43.97,
+   "tax": 4.73,
+   "tip": 5.68,
+   "total": 54.38,
+   "type": "Delivery"
+  },
+  {
+   "id": "o10",
+   "courier": "Rahul",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8233K",
+   "phone": "(510) 555-3884",
+   "placedAt": 1791736710322.9814,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 47.98,
+   "tax": 5.16,
+   "tip": 6.36,
+   "total": 59.5,
+   "type": "Delivery"
+  },
+  {
+   "id": "o11",
+   "courier": null,
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8232L",
+   "phone": "(510) 555-2868",
+   "placedAt": 1791733660048.43,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 28.99,
+   "tax": 3.12,
+   "tip": 0,
+   "total": 32.11,
+   "type": "Pickup"
+  },
+  {
+   "id": "o12",
+   "courier": "Tina",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Classic Hamburger",
+     "qty": 1,
+     "price": 9.99,
+     "note": null
+    },
+    {
+     "name": "Lamb Kabab",
+     "qty": 2,
+     "price": 24.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8231M",
+   "phone": "(510) 555-2319",
+   "placedAt": 1791730453222.4573,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 59.97,
+   "tax": 6.45,
+   "tip": 11.36,
+   "total": 77.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o13",
+   "courier": "Miguel",
+   "customer": "Zara Q.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8230N",
+   "phone": "(510) 555-1481",
+   "placedAt": 1791727095867.2446,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 22.99,
+   "tax": 2.47,
+   "tip": 4.24,
+   "total": 29.7,
+   "type": "Delivery"
+  },
+  {
+   "id": "o14",
+   "courier": "Tina",
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    },
+    {
+     "name": "Salmon Burger",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8229O",
+   "phone": "(510) 555-9436",
+   "placedAt": 1791723593316.3896,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 58.97,
+   "tax": 6.34,
+   "tip": 9.91,
+   "total": 75.22,
+   "type": "Delivery"
+  },
+  {
+   "id": "o15",
+   "courier": null,
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Curly Fries",
+     "qty": 1,
+     "price": 4.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Classic Hamburger",
+     "qty": 2,
+     "price": 9.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8228",
+   "phone": "(510) 555-4968",
+   "placedAt": 1791719950338.3555,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 55.95,
+   "tax": 6.01,
+   "tip": 0,
+   "total": 61.96,
+   "type": "Pickup"
+  },
+  {
+   "id": "o16",
+   "courier": "Tina",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8227Q",
+   "phone": "(510) 555-3406",
+   "placedAt": 1791716171230.8513,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 71.97,
+   "tax": 7.74,
+   "tip": 8.26,
+   "total": 87.97,
+   "type": "Delivery"
+  },
+  {
+   "id": "o17",
+   "courier": null,
+   "customer": "Omar H.",
+   "lines": [
+    {
+     "name": "Lamb Kabab",
+     "qty": 2,
+     "price": 24.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8226",
+   "phone": "(510) 555-3067",
+   "placedAt": 1791712259894.4143,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 80.96,
+   "tax": 8.7,
+   "tip": 0,
+   "total": 89.66,
+   "type": "Pickup"
+  },
+  {
+   "id": "o18",
+   "courier": null,
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8225",
+   "phone": "(510) 555-3364",
+   "placedAt": 1791708219890.7576,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 46.97,
+   "tax": 5.05,
+   "tip": 0,
+   "total": 52.02,
+   "type": "Pickup"
+  },
+  {
+   "id": "o19",
+   "courier": "Brandon",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8224T",
+   "phone": "(510) 555-8739",
+   "placedAt": 1791704054489.721,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 61.97,
+   "tax": 6.66,
+   "tip": 7.85,
+   "total": 76.48,
+   "type": "Delivery"
+  },
+  {
+   "id": "o20",
+   "courier": "Brandon",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Salmon Burger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8223U",
+   "phone": "(510) 555-7010",
+   "placedAt": 1791699766707.5461,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 46.97,
+   "tax": 5.05,
+   "tip": 6.15,
+   "total": 58.17,
+   "type": "Delivery"
+  },
+  {
+   "id": "o21",
+   "courier": "Rahul",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Jumbo Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8222V",
+   "phone": "(510) 555-7643",
+   "placedAt": 1791695359338.4392,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 66.96,
+   "tax": 7.2,
+   "tip": 10.92,
+   "total": 85.08,
+   "type": "Delivery"
+  },
+  {
+   "id": "o22",
+   "courier": null,
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Tenders with Fries",
+     "qty": 1,
+     "price": 14.99,
+     "note": null
+    },
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8221",
+   "phone": "(510) 555-2090",
+   "placedAt": 1791690834980.867,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 73.96,
+   "tax": 7.95,
+   "tip": 0,
+   "total": 81.91,
+   "type": "Pickup"
+  },
+  {
+   "id": "o23",
+   "courier": "Rahul",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Cheese Pizza with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "#8220",
+   "phone": "(510) 555-3340",
+   "placedAt": 1791686196059.667,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 50.96,
+   "tax": 5.48,
+   "tip": 7.54,
+   "total": 63.98,
+   "type": "Delivery"
+  },
+  {
+   "id": "o24",
+   "courier": null,
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8219",
+   "phone": "(510) 555-3161",
+   "placedAt": 1791681444844.7952,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 72.97,
+   "tax": 7.84,
+   "tip": 0,
+   "total": 80.81,
+   "type": "Pickup"
+  },
+  {
+   "id": "o25",
+   "courier": "Brandon",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Gyro Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Bacon Cheddar Burger",
+     "qty": 1,
+     "price": 14.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8218",
+   "phone": "(510) 555-5441",
+   "placedAt": 1791676583467.3416,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 92.95,
+   "tax": 9.99,
+   "tip": 17.39,
+   "total": 120.33,
+   "type": "Delivery"
+  },
+  {
+   "id": "o26",
+   "courier": "Tina",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8217A",
+   "phone": "(510) 555-6424",
+   "placedAt": 1791671613933.3088,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 19.99,
+   "tax": 2.15,
+   "tip": 2.27,
+   "total": 24.41,
+   "type": "Delivery"
+  },
+  {
+   "id": "o27",
+   "courier": "Brandon",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Curly Fries",
+     "qty": 1,
+     "price": 4.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8216B",
+   "phone": "(510) 555-2695",
+   "placedAt": 1791666538135.5388,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 60.96,
+   "tax": 6.55,
+   "tip": 10.01,
+   "total": 77.52,
+   "type": "Delivery"
+  },
+  {
+   "id": "o28",
+   "courier": "Brandon",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Side of Hummus",
+     "qty": 1,
+     "price": 6.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8215C",
+   "phone": "(510) 555-2425",
+   "placedAt": 1791661357864.0967,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 6.99,
+   "tax": 0.75,
+   "tip": 1.04,
+   "total": 8.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o29",
+   "courier": null,
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Lamb Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8214D",
+   "phone": "(510) 555-4272",
+   "placedAt": 1791656074815.3643,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 35.98,
+   "tax": 3.87,
+   "tip": 0,
+   "total": 39.85,
+   "type": "Pickup"
+  },
+  {
+   "id": "o30",
+   "courier": "Andre",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 2,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8213E",
+   "phone": "(510) 555-5939",
+   "placedAt": 1791650690600.0361,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 78.97,
+   "tax": 8.49,
+   "tip": 8.32,
+   "total": 95.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o31",
+   "courier": "Tina",
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Chapli Kabab",
+     "qty": 1,
+     "price": 19.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Classic Hamburger",
+     "qty": 2,
+     "price": 9.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8212F",
+   "phone": "(510) 555-3510",
+   "placedAt": 1791645206750.189,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 39.97,
+   "tax": 4.3,
+   "tip": 6.9,
+   "total": 51.17,
+   "type": "Delivery"
+  },
+  {
+   "id": "o32",
+   "courier": "Miguel",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Lamb Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": null
+    }
+   ],
+   "number": "#8211",
+   "phone": "(510) 555-5313",
+   "placedAt": 1791639624725.5554,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 33.98,
+   "tax": 3.65,
+   "tip": 6.61,
+   "total": 44.24,
+   "type": "Delivery"
+  },
+  {
+   "id": "o33",
+   "courier": "Brandon",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8210H",
+   "phone": "(510) 555-9856",
+   "placedAt": 1791633945919.1152,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 34.99,
+   "tax": 3.76,
+   "tip": 6.48,
+   "total": 45.23,
+   "type": "Delivery"
+  },
+  {
+   "id": "o34",
+   "courier": "Andre",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Curly Fries",
+     "qty": 1,
+     "price": 4.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Texan Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8209I",
+   "phone": "(510) 555-2405",
+   "placedAt": 1791628171662.0967,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 64.96,
+   "tax": 6.98,
+   "tip": 10.76,
+   "total": 82.7,
+   "type": "Delivery"
+  },
+  {
+   "id": "o35",
+   "courier": "Rahul",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8208J",
+   "phone": "(510) 555-8132",
+   "placedAt": 1791622303228.465,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 17.99,
+   "tax": 1.93,
+   "tip": 3.55,
+   "total": 23.47,
+   "type": "Delivery"
+  },
+  {
+   "id": "o36",
+   "courier": "Miguel",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8207K",
+   "phone": "(510) 555-6350",
+   "placedAt": 1791616341838.966,
+   "provider": "doordash",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 41.97,
+   "tax": 4.51,
+   "tip": 8.38,
+   "total": 54.86,
+   "type": "Delivery"
+  },
+  {
+   "id": "o37",
+   "courier": "Miguel",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Lamb Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Onion Rings",
+     "qty": 2,
+     "price": 6.99,
+     "note": null
+    },
+    {
+     "name": "Classic Hamburger",
+     "qty": 1,
+     "price": 9.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8206L",
+   "phone": "(510) 555-1543",
+   "placedAt": 1791610288664.7764,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 71.95,
+   "tax": 7.73,
+   "tip": 12.75,
+   "total": 92.43,
+   "type": "Delivery"
+  },
+  {
+   "id": "o38",
+   "courier": "Andre",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8205M",
+   "phone": "(510) 555-8433",
+   "placedAt": 1791604144830.8145,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 8.99,
+   "tax": 0.97,
+   "tip": 0.9,
+   "total": 10.86,
+   "type": "Delivery"
+  },
+  {
+   "id": "o39",
+   "courier": "Jasmine",
+   "customer": "Zara Q.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Beef Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "UE-8204N",
+   "phone": "(510) 555-7592",
+   "placedAt": 1791597911418.7446,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 90.96,
+   "tax": 9.78,
+   "tip": 10.33,
+   "total": 111.07,
+   "type": "Delivery"
+  },
+  {
+   "id": "o40",
+   "courier": null,
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Beef Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    },
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8203",
+   "phone": "(510) 555-5551",
+   "placedAt": 1791591589469.7153,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 113.96,
+   "tax": 12.25,
+   "tip": 0,
+   "total": 126.21,
+   "type": "Pickup"
+  },
+  {
+   "id": "o41",
+   "courier": "Tina",
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8202P",
+   "phone": "(510) 555-3756",
+   "placedAt": 1791585179986.8596,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 2.69,
+   "total": 27.04,
+   "type": "Delivery"
+  },
+  {
+   "id": "o42",
+   "courier": "Tina",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8201Q",
+   "phone": "(510) 555-2585",
+   "placedAt": 1791578683937.583,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.77,
+   "total": 16.16,
+   "type": "Delivery"
+  },
+  {
+   "id": "o43",
+   "courier": "Andre",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": null
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8200R",
+   "phone": "(510) 555-7389",
+   "placedAt": 1791572102255.662,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 71.97,
+   "tax": 7.74,
+   "tip": 8.44,
+   "total": 88.15,
+   "type": "Delivery"
+  },
+  {
+   "id": "o44",
+   "courier": null,
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8199",
+   "phone": "(510) 555-2229",
+   "placedAt": 1791565435843.1733,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 17.99,
+   "tax": 1.93,
+   "tip": 0,
+   "total": 19.92,
+   "type": "Pickup"
+  },
+  {
+   "id": "o45",
+   "courier": "Jasmine",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8198T",
+   "phone": "(510) 555-1758",
+   "placedAt": 1791558685572.2712,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.91,
+   "total": 16.3,
+   "type": "Delivery"
+  },
+  {
+   "id": "o46",
+   "courier": "Tina",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 2,
+     "price": 22.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8197U",
+   "phone": "(510) 555-1854",
+   "placedAt": 1791551852286.8264,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 85.95,
+   "tax": 9.24,
+   "tip": 8.89,
+   "total": 104.08,
+   "type": "Delivery"
+  },
+  {
+   "id": "o47",
+   "courier": "Andre",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": null
+    },
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8196V",
+   "phone": "(510) 555-3920",
+   "placedAt": 1791544936803.9429,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 54.97,
+   "tax": 5.91,
+   "tip": 8.44,
+   "total": 69.32,
+   "type": "Delivery"
+  },
+  {
+   "id": "o48",
+   "courier": "Miguel",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "GH-8195W",
+   "phone": "(510) 555-2390",
+   "placedAt": 1791537939915.3616,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 45.97,
+   "tax": 4.94,
+   "tip": 6.57,
+   "total": 57.48,
+   "type": "Delivery"
+  },
+  {
+   "id": "o49",
+   "courier": "Jasmine",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Crispy Chicken Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8194X",
+   "phone": "(510) 555-6257",
+   "placedAt": 1791530862388.7632,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 34.98,
+   "tax": 3.76,
+   "tip": 6.12,
+   "total": 44.86,
+   "type": "Delivery"
+  },
+  {
+   "id": "o50",
+   "courier": "Miguel",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 2,
+     "price": 22.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 2,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8193Y",
+   "phone": "(510) 555-4756",
+   "placedAt": 1791523704968.977,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 85.95,
+   "tax": 9.24,
+   "tip": 16.95,
+   "total": 112.14,
+   "type": "Delivery"
+  },
+  {
+   "id": "o51",
+   "courier": "Rahul",
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "#8192",
+   "phone": "(510) 555-2709",
+   "placedAt": 1791516468379.1096,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 22.99,
+   "tax": 2.47,
+   "tip": 2.83,
+   "total": 28.29,
+   "type": "Delivery"
+  },
+  {
+   "id": "o52",
+   "courier": null,
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Classic Hamburger",
+     "qty": 1,
+     "price": 9.99,
+     "note": null
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 2,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Cheese Pizza with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8191",
+   "phone": "(510) 555-7043",
+   "placedAt": 1791509153321.5918,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 60.95,
+   "tax": 6.55,
+   "tip": 0,
+   "total": 67.5,
+   "type": "Pickup"
+  },
+  {
+   "id": "o53",
+   "courier": "Jasmine",
+   "customer": "Omar H.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "#8190",
+   "phone": "(510) 555-1699",
+   "placedAt": 1791501760479.1597,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 3.35,
+   "total": 27.7,
+   "type": "Delivery"
+  },
+  {
+   "id": "o54",
+   "courier": null,
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Salmon Burger",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Crispy Chicken Burger",
+     "qty": 2,
+     "price": 11.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8189C",
+   "phone": "(510) 555-5894",
+   "placedAt": 1791494290515.77,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 84.94,
+   "tax": 9.13,
+   "tip": 0,
+   "total": 94.07,
+   "type": "Pickup"
+  },
+  {
+   "id": "o55",
+   "courier": "Tina",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Salmon Burger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "#8188",
+   "phone": "(510) 555-6478",
+   "placedAt": 1791486744077.4563,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 85.96,
+   "tax": 9.24,
+   "tip": 10.58,
+   "total": 105.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o56",
+   "courier": "Miguel",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Club Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": null
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8187E",
+   "phone": "(510) 555-8002",
+   "placedAt": 1791479121793.1313,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 26.98,
+   "tax": 2.9,
+   "tip": 5,
+   "total": 34.88,
+   "type": "Delivery"
+  },
+  {
+   "id": "o57",
+   "courier": "Rahul",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 2,
+     "price": 22.99,
+     "note": null
+    },
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 2,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8186F",
+   "phone": "(510) 555-4094",
+   "placedAt": 1791471424275.3413,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 73.95,
+   "tax": 7.95,
+   "tip": 11.04,
+   "total": 92.94,
+   "type": "Delivery"
+  },
+  {
+   "id": "o58",
+   "courier": null,
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8185G",
+   "phone": "(510) 555-1805",
+   "placedAt": 1791463652120.9712,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 75.96,
+   "tax": 8.17,
+   "tip": 0,
+   "total": 84.13,
+   "type": "Pickup"
+  },
+  {
+   "id": "o59",
+   "courier": "Andre",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Chapli Kabab",
+     "qty": 1,
+     "price": 19.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8184H",
+   "phone": "(510) 555-3688",
+   "placedAt": 1791455805911.9106,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 54.97,
+   "tax": 5.91,
+   "tip": 8.79,
+   "total": 69.67,
+   "type": "Delivery"
+  },
+  {
+   "id": "o60",
+   "courier": "Andre",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8183I",
+   "phone": "(510) 555-5575",
+   "placedAt": 1791447886215.6794,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 50.98,
+   "tax": 5.48,
+   "tip": 9.72,
+   "total": 66.18,
+   "type": "Delivery"
+  },
+  {
+   "id": "o61",
+   "courier": "Rahul",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8182J",
+   "phone": "(510) 555-5331",
+   "placedAt": 1791439893586.0173,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 26.98,
+   "tax": 2.9,
+   "tip": 3.73,
+   "total": 33.61,
+   "type": "Delivery"
+  },
+  {
+   "id": "o62",
+   "courier": "Tina",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8181K",
+   "phone": "(510) 555-8168",
+   "placedAt": 1791431828563.4395,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 46.96,
+   "tax": 5.05,
+   "tip": 5.99,
+   "total": 58,
+   "type": "Delivery"
+  },
+  {
+   "id": "o63",
+   "courier": "Andre",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Cheese Pizza with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Salmon Burger",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8180",
+   "phone": "(510) 555-4685",
+   "placedAt": 1791423691675.762,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 48.96,
+   "tax": 5.26,
+   "tip": 7.67,
+   "total": 61.89,
+   "type": "Delivery"
+  },
+  {
+   "id": "o64",
+   "courier": "Jasmine",
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8179M",
+   "phone": "(510) 555-8897",
+   "placedAt": 1791415483438.5984,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.55,
+   "total": 15.94,
+   "type": "Delivery"
+  },
+  {
+   "id": "o65",
+   "courier": "Andre",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Side of Hummus",
+     "qty": 1,
+     "price": 6.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 2,
+     "price": 11.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8178N",
+   "phone": "(510) 555-5281",
+   "placedAt": 1791407204355.828,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 63.95,
+   "tax": 6.87,
+   "tip": 8.66,
+   "total": 79.48,
+   "type": "Delivery"
+  },
+  {
+   "id": "o66",
+   "courier": null,
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    }
+   ],
+   "number": "#8177",
+   "phone": "(510) 555-8861",
+   "placedAt": 1791398854920.0403,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 28.99,
+   "tax": 3.12,
+   "tip": 0,
+   "total": 32.11,
+   "type": "Pickup"
+  },
+  {
+   "id": "o67",
+   "courier": "Brandon",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 3,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8176P",
+   "phone": "(510) 555-8552",
+   "placedAt": 1791390435612.957,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 116.96,
+   "tax": 12.57,
+   "tip": 18.25,
+   "total": 147.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o68",
+   "courier": null,
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8175",
+   "phone": "(510) 555-8258",
+   "placedAt": 1791381946905.8293,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 16.99,
+   "tax": 1.83,
+   "tip": 0,
+   "total": 18.82,
+   "type": "Pickup"
+  },
+  {
+   "id": "o69",
+   "courier": "Rahul",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8174R",
+   "phone": "(510) 555-9206",
+   "placedAt": 1791373389259.8184,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.94,
+   "total": 16.33,
+   "type": "Delivery"
+  },
+  {
+   "id": "o70",
+   "courier": "Miguel",
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 2,
+     "price": 10.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8173S",
+   "phone": "(510) 555-8158",
+   "placedAt": 1791364763126.3542,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 43.97,
+   "tax": 4.73,
+   "tip": 8.7,
+   "total": 57.4,
+   "type": "Delivery"
+  },
+  {
+   "id": "o71",
+   "courier": "Jasmine",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8172T",
+   "phone": "(510) 555-4314",
+   "placedAt": 1791356068947.478,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 45.97,
+   "tax": 4.94,
+   "tip": 7.16,
+   "total": 58.07,
+   "type": "Delivery"
+  },
+  {
+   "id": "o72",
+   "courier": null,
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8171U",
+   "phone": "(510) 555-2706",
+   "placedAt": 1791347307156.1667,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 28.99,
+   "tax": 3.12,
+   "tip": 0,
+   "total": 32.11,
+   "type": "Pickup"
+  },
+  {
+   "id": "o73",
+   "courier": "Jasmine",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Jumbo Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": null
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Butterfly Shrimp with Fries",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8170V",
+   "phone": "(510) 555-4707",
+   "placedAt": 1791338478176.6445,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 67.96,
+   "tax": 7.31,
+   "tip": 8.46,
+   "total": 83.73,
+   "type": "Delivery"
+  },
+  {
+   "id": "o74",
+   "courier": "Tina",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "GH-8169W",
+   "phone": "(510) 555-2783",
+   "placedAt": 1791329582424.675,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 3.77,
+   "total": 28.12,
+   "type": "Delivery"
+  },
+  {
+   "id": "o75",
+   "courier": "Jasmine",
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 2,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8168X",
+   "phone": "(510) 555-1309",
+   "placedAt": 1791320620307.845,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 55.97,
+   "tax": 6.02,
+   "tip": 6.72,
+   "total": 68.71,
+   "type": "Delivery"
+  },
+  {
+   "id": "o76",
+   "courier": "Tina",
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8167",
+   "phone": "(510) 555-2310",
+   "placedAt": 1791311592225.8313,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 72.96,
+   "tax": 7.84,
+   "tip": 12.05,
+   "total": 92.85,
+   "type": "Delivery"
+  },
+  {
+   "id": "o77",
+   "courier": null,
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8166Z",
+   "phone": "(510) 555-7685",
+   "placedAt": 1791302498570.6562,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 33.98,
+   "tax": 3.65,
+   "tip": 0,
+   "total": 37.63,
+   "type": "Pickup"
+  },
+  {
+   "id": "o78",
+   "courier": "Jasmine",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8165A",
+   "phone": "(510) 555-6704",
+   "placedAt": 1791293339726.934,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 2.12,
+   "total": 16.51,
+   "type": "Delivery"
+  },
+  {
+   "id": "o79",
+   "courier": "Andre",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8164B",
+   "phone": "(510) 555-3281",
+   "placedAt": 1791284116072.102,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 28.99,
+   "tax": 3.12,
+   "tip": 4.8,
+   "total": 36.91,
+   "type": "Delivery"
+  },
+  {
+   "id": "o80",
+   "courier": "Rahul",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 2,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8163C",
+   "phone": "(510) 555-4885",
+   "placedAt": 1791274827976.6455,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 82.97,
+   "tax": 8.92,
+   "tip": 14.78,
+   "total": 106.67,
+   "type": "Delivery"
+  },
+  {
+   "id": "o81",
+   "courier": "Rahul",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8162D",
+   "phone": "(510) 555-5447",
+   "placedAt": 1791265475804.311,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 23.98,
+   "tax": 2.58,
+   "tip": 4.24,
+   "total": 30.8,
+   "type": "Delivery"
+  },
+  {
+   "id": "o82",
+   "courier": "Rahul",
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8161E",
+   "phone": "(510) 555-9205",
+   "placedAt": 1791256059912.3108,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 16.98,
+   "tax": 1.83,
+   "tip": 2.01,
+   "total": 20.82,
+   "type": "Delivery"
+  },
+  {
+   "id": "o83",
+   "courier": "Andre",
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8160F",
+   "phone": "(510) 555-1488",
+   "placedAt": 1791246580651.519,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 38.97,
+   "tax": 4.19,
+   "tip": 4.81,
+   "total": 47.97,
+   "type": "Delivery"
+  },
+  {
+   "id": "o84",
+   "courier": null,
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8159G",
+   "phone": "(510) 555-2932",
+   "placedAt": 1791237038366.659,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 44.96,
+   "tax": 4.83,
+   "tip": 0,
+   "total": 49.79,
+   "type": "Pickup"
+  },
+  {
+   "id": "o85",
+   "courier": null,
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Veggie Burger",
+     "qty": 1,
+     "price": 9.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 2,
+     "price": 8.99,
+     "note": null
+    }
+   ],
+   "number": "#8158",
+   "phone": "(510) 555-3588",
+   "placedAt": 1791227433396.4834,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 49.96,
+   "tax": 5.37,
+   "tip": 0,
+   "total": 55.33,
+   "type": "Pickup"
+  },
+  {
+   "id": "o86",
+   "courier": "Miguel",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "#8157",
+   "phone": "(510) 555-1716",
+   "placedAt": 1791217766073.9473,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 47.98,
+   "tax": 5.16,
+   "tip": 5.2,
+   "total": 58.34,
+   "type": "Delivery"
+  },
+  {
+   "id": "o87",
+   "courier": null,
+   "customer": "Priya S.",
+   "lines": [
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Butterfly Shrimp with Fries",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8156J",
+   "phone": "(510) 555-9701",
+   "placedAt": 1791208036726.3733,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 46.97,
+   "tax": 5.05,
+   "tip": 0,
+   "total": 52.02,
+   "type": "Pickup"
+  },
+  {
+   "id": "o88",
+   "courier": "Andre",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8155K",
+   "phone": "(510) 555-9341",
+   "placedAt": 1791198245675.6113,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 80.96,
+   "tax": 8.7,
+   "tip": 9.6,
+   "total": 99.26,
+   "type": "Delivery"
+  },
+  {
+   "id": "o89",
+   "courier": "Andre",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8154L",
+   "phone": "(510) 555-7875",
+   "placedAt": 1791188393238.191,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 11.99,
+   "tax": 1.29,
+   "tip": 1.81,
+   "total": 15.09,
+   "type": "Delivery"
+  },
+  {
+   "id": "o90",
+   "courier": "Rahul",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8153",
+   "phone": "(510) 555-6874",
+   "placedAt": 1791178479725.468,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 2.26,
+   "total": 16.65,
+   "type": "Delivery"
+  },
+  {
+   "id": "o91",
+   "courier": "Miguel",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "GH-8152N",
+   "phone": "(510) 555-5059",
+   "placedAt": 1791168505443.7668,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 11.99,
+   "tax": 1.29,
+   "tip": 1.87,
+   "total": 15.15,
+   "type": "Delivery"
+  },
+  {
+   "id": "o92",
+   "courier": "Jasmine",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 2,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8151O",
+   "phone": "(510) 555-3255",
+   "placedAt": 1791158470694.5156,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 76.95,
+   "tax": 8.27,
+   "tip": 11.28,
+   "total": 96.5,
+   "type": "Delivery"
+  },
+  {
+   "id": "o93",
+   "courier": null,
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Side of Hummus",
+     "qty": 2,
+     "price": 6.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8150",
+   "phone": "(510) 555-4855",
+   "placedAt": 1791148375774.3772,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 13.98,
+   "tax": 1.5,
+   "tip": 0,
+   "total": 15.48,
+   "type": "Pickup"
+  },
+  {
+   "id": "o94",
+   "courier": "Tina",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": null
+    },
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8149Q",
+   "phone": "(510) 555-3750",
+   "placedAt": 1791138220975.3752,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 49.96,
+   "tax": 5.37,
+   "tip": 7.53,
+   "total": 62.86,
+   "type": "Delivery"
+  },
+  {
+   "id": "o95",
+   "courier": "Rahul",
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8148R",
+   "phone": "(510) 555-1285",
+   "placedAt": 1791128006585.0144,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 3.99,
+   "tax": 0.43,
+   "tip": 0.61,
+   "total": 5.03,
+   "type": "Delivery"
+  },
+  {
+   "id": "o96",
+   "courier": "Rahul",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 2,
+     "price": 10.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Philly Wrap",
+     "qty": 2,
+     "price": 13.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8147S",
+   "phone": "(510) 555-3886",
+   "placedAt": 1791117732886.3994,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 62.95,
+   "tax": 6.77,
+   "tip": 12.38,
+   "total": 82.1,
+   "type": "Delivery"
+  },
+  {
+   "id": "o97",
+   "courier": "Miguel",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8146T",
+   "phone": "(510) 555-3824",
+   "placedAt": 1791107400158.3455,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 84.95,
+   "tax": 9.13,
+   "tip": 14.85,
+   "total": 108.93,
+   "type": "Delivery"
+  },
+  {
+   "id": "o98",
+   "courier": "Andre",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Club Wrap",
+     "qty": 2,
+     "price": 13.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8145U",
+   "phone": "(510) 555-3886",
+   "placedAt": 1791097008675.488,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 40.97,
+   "tax": 4.4,
+   "tip": 7.01,
+   "total": 52.38,
+   "type": "Delivery"
+  },
+  {
+   "id": "o99",
+   "courier": "Rahul",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8144V",
+   "phone": "(510) 555-1060",
+   "placedAt": 1791086558708.388,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 2.52,
+   "total": 16.91,
+   "type": "Delivery"
+  },
+  {
+   "id": "o100",
+   "courier": "Brandon",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Tenders with Fries",
+     "qty": 1,
+     "price": 14.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8143W",
+   "phone": "(510) 555-1311",
+   "placedAt": 1791076050523.631,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 61.96,
+   "tax": 6.66,
+   "tip": 11.88,
+   "total": 80.5,
+   "type": "Delivery"
+  },
+  {
+   "id": "o101",
+   "courier": "Tina",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Hawaiian Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Fries",
+     "qty": 2,
+     "price": 3.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8142X",
+   "phone": "(510) 555-9010",
+   "placedAt": 1791065484383.928,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 19.97,
+   "tax": 2.15,
+   "tip": 2.47,
+   "total": 24.59,
+   "type": "Delivery"
+  },
+  {
+   "id": "o102",
+   "courier": "Tina",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8141Y",
+   "phone": "(510) 555-4251",
+   "placedAt": 1791054860548.2063,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.98,
+   "tax": 2.36,
+   "tip": 2.5,
+   "total": 26.84,
+   "type": "Delivery"
+  },
+  {
+   "id": "o103",
+   "courier": "Miguel",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8140Z",
+   "phone": "(510) 555-1253",
+   "placedAt": 1791044179271.7031,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.45,
+   "total": 15.84,
+   "type": "Delivery"
+  },
+  {
+   "id": "o104",
+   "courier": "Rahul",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Bacon Cheddar Burger",
+     "qty": 1,
+     "price": 14.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8139A",
+   "phone": "(510) 555-7032",
+   "placedAt": 1791033440806.0522,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 14.99,
+   "tax": 1.61,
+   "tip": 2.32,
+   "total": 18.92,
+   "type": "Delivery"
+  },
+  {
+   "id": "o105",
+   "courier": null,
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 2,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Fries",
+     "qty": 2,
+     "price": 3.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Side of Falafel",
+     "qty": 1,
+     "price": 5.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "#8138",
+   "phone": "(510) 555-5379",
+   "placedAt": 1791022645399.3704,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 83.95,
+   "tax": 9.02,
+   "tip": 0,
+   "total": 92.97,
+   "type": "Pickup"
+  },
+  {
+   "id": "o106",
+   "courier": "Andre",
+   "customer": "Zara Q.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "GH-8137C",
+   "phone": "(510) 555-6672",
+   "placedAt": 1791011793296.3381,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 16.99,
+   "tax": 1.83,
+   "tip": 2.86,
+   "total": 21.68,
+   "type": "Delivery"
+  },
+  {
+   "id": "o107",
+   "courier": "Brandon",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Salmon Burger",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8136D",
+   "phone": "(510) 555-3191",
+   "placedAt": 1791000884738.2798,
+   "provider": "grubhub",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 23.98,
+   "tax": 2.58,
+   "tip": 4.35,
+   "total": 30.91,
+   "type": "Delivery"
+  },
+  {
+   "id": "o108",
+   "courier": "Jasmine",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8135E",
+   "phone": "(510) 555-1628",
+   "placedAt": 1790989919963.242,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 10.99,
+   "tax": 1.18,
+   "tip": 1.45,
+   "total": 13.62,
+   "type": "Delivery"
+  },
+  {
+   "id": "o109",
+   "courier": null,
+   "customer": "Zara Q.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 2,
+     "price": 17.99,
+     "note": null
+    }
+   ],
+   "number": "#8134",
+   "phone": "(510) 555-4997",
+   "placedAt": 1790978899206.0657,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 35.98,
+   "tax": 3.87,
+   "tip": 0,
+   "total": 39.85,
+   "type": "Pickup"
+  },
+  {
+   "id": "o110",
+   "courier": "Andre",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "#8133",
+   "phone": "(510) 555-1419",
+   "placedAt": 1790967822698.4607,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 2.49,
+   "total": 26.84,
+   "type": "Delivery"
+  },
+  {
+   "id": "o111",
+   "courier": "Brandon",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Beef Kabab",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Side of Hummus",
+     "qty": 1,
+     "price": 6.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8132H",
+   "phone": "(510) 555-8938",
+   "placedAt": 1790956690669.0745,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 57.96,
+   "tax": 6.23,
+   "tip": 9.43,
+   "total": 73.62,
+   "type": "Delivery"
+  },
+  {
+   "id": "o112",
+   "courier": "Tina",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8131I",
+   "phone": "(510) 555-8304",
+   "placedAt": 1790945503343.56,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 38.98,
+   "tax": 4.19,
+   "tip": 4.97,
+   "total": 48.14,
+   "type": "Delivery"
+  },
+  {
+   "id": "o113",
+   "courier": "Tina",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Philly Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8130J",
+   "phone": "(510) 555-1394",
+   "placedAt": 1790934260944.6416,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 30.97,
+   "tax": 3.33,
+   "tip": 5.81,
+   "total": 40.11,
+   "type": "Delivery"
+  },
+  {
+   "id": "o114",
+   "courier": "Andre",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8129K",
+   "phone": "(510) 555-7029",
+   "placedAt": 1790922963692.1787,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 66.97,
+   "tax": 7.2,
+   "tip": 7.03,
+   "total": 81.2,
+   "type": "Delivery"
+  },
+  {
+   "id": "o115",
+   "courier": "Rahul",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8128L",
+   "phone": "(510) 555-9037",
+   "placedAt": 1790911611803.2268,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 22.99,
+   "tax": 2.47,
+   "tip": 4.18,
+   "total": 29.64,
+   "type": "Delivery"
+  },
+  {
+   "id": "o116",
+   "courier": "Miguel",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Curly Fries",
+     "qty": 2,
+     "price": 4.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8127M",
+   "phone": "(510) 555-3251",
+   "placedAt": 1790900205492.0986,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 9.98,
+   "tax": 1.07,
+   "tip": 1.96,
+   "total": 13.01,
+   "type": "Delivery"
+  },
+  {
+   "id": "o117",
+   "courier": "Rahul",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Veggie Burger",
+     "qty": 1,
+     "price": 9.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": null
+    },
+    {
+     "name": "Combo Platter",
+     "qty": 2,
+     "price": 24.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8126N",
+   "phone": "(510) 555-2527",
+   "placedAt": 1790888744970.4214,
+   "provider": "doordash",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 91.95,
+   "tax": 9.88,
+   "tip": 11.61,
+   "total": 113.44,
+   "type": "Delivery"
+  },
+  {
+   "id": "o118",
+   "courier": "Tina",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 2,
+     "price": 10.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8125O",
+   "phone": "(510) 555-4575",
+   "placedAt": 1790877230447.1929,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 72.96,
+   "tax": 7.84,
+   "tip": 8.08,
+   "total": 88.88,
+   "type": "Delivery"
+  },
+  {
+   "id": "o119",
+   "courier": "Tina",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Fries",
+     "qty": 1,
+     "price": 3.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8124P",
+   "phone": "(510) 555-6999",
+   "placedAt": 1790865662128.837,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 20.98,
+   "tax": 2.26,
+   "tip": 2.8,
+   "total": 26.04,
+   "type": "Delivery"
+  },
+  {
+   "id": "o120",
+   "courier": "Miguel",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 2,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8123Q",
+   "phone": "(510) 555-2322",
+   "placedAt": 1790854040219.2563,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 53.96,
+   "tax": 5.8,
+   "tip": 5.66,
+   "total": 65.42,
+   "type": "Delivery"
+  },
+  {
+   "id": "o121",
+   "courier": null,
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Philly Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8122",
+   "phone": "(510) 555-6108",
+   "placedAt": 1790842364919.8838,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 52.97,
+   "tax": 5.69,
+   "tip": 0,
+   "total": 58.66,
+   "type": "Pickup"
+  },
+  {
+   "id": "o122",
+   "courier": "Rahul",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8121S",
+   "phone": "(510) 555-2836",
+   "placedAt": 1790830636429.7334,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 10.99,
+   "tax": 1.18,
+   "tip": 1.3,
+   "total": 13.47,
+   "type": "Delivery"
+  },
+  {
+   "id": "o123",
+   "courier": "Jasmine",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 2,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8120T",
+   "phone": "(510) 555-4047",
+   "placedAt": 1790818854945.4475,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 85.95,
+   "tax": 9.24,
+   "tip": 10.53,
+   "total": 105.72,
+   "type": "Delivery"
+  },
+  {
+   "id": "o124",
+   "courier": "Jasmine",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8119U",
+   "phone": "(510) 555-6460",
+   "placedAt": 1790807020661.3457,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 6.99,
+   "tax": 0.75,
+   "tip": 0.84,
+   "total": 8.58,
+   "type": "Delivery"
+  },
+  {
+   "id": "o125",
+   "courier": null,
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 2,
+     "price": 17.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "#8118",
+   "phone": "(510) 555-2159",
+   "placedAt": 1790795133769.47,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 92.95,
+   "tax": 9.99,
+   "tip": 0,
+   "total": 102.94,
+   "type": "Pickup"
+  },
+  {
+   "id": "o126",
+   "courier": "Tina",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Dolma",
+     "qty": 2,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Curly Fries",
+     "qty": 1,
+     "price": 4.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8117W",
+   "phone": "(510) 555-1428",
+   "placedAt": 1790783194459.63,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 44.96,
+   "tax": 4.83,
+   "tip": 7.86,
+   "total": 57.65,
+   "type": "Delivery"
+  },
+  {
+   "id": "o127",
+   "courier": "Rahul",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "#8116",
+   "phone": "(510) 555-9770",
+   "placedAt": 1790771202919.445,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 43.98,
+   "tax": 4.73,
+   "tip": 6.52,
+   "total": 55.23,
+   "type": "Delivery"
+  },
+  {
+   "id": "o128",
+   "courier": "Brandon",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Double Cheeseburger",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "UE-8115Y",
+   "phone": "(510) 555-5356",
+   "placedAt": 1790759159334.3894,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 12.99,
+   "tax": 1.4,
+   "tip": 1.71,
+   "total": 16.1,
+   "type": "Delivery"
+  },
+  {
+   "id": "o129",
+   "courier": "Rahul",
+   "customer": "Omar H.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 2,
+     "price": 12.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8114Z",
+   "phone": "(510) 555-3052",
+   "placedAt": 1790747063887.8303,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 60.97,
+   "tax": 6.55,
+   "tip": 11.55,
+   "total": 79.07,
+   "type": "Delivery"
+  },
+  {
+   "id": "o130",
+   "courier": null,
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8113A",
+   "phone": "(510) 555-5739",
+   "placedAt": 1790734916761.0698,
+   "provider": "doordash",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 21.98,
+   "tax": 2.36,
+   "tip": 0,
+   "total": 24.34,
+   "type": "Pickup"
+  },
+  {
+   "id": "o131",
+   "courier": "Tina",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Philly Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Hawaiian Burger",
+     "qty": 2,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8112B",
+   "phone": "(510) 555-6689",
+   "placedAt": 1790722718133.3835,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 85.94,
+   "tax": 9.24,
+   "tip": 15.29,
+   "total": 110.47,
+   "type": "Delivery"
+  },
+  {
+   "id": "o132",
+   "courier": null,
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Curly Fries",
+     "qty": 2,
+     "price": 4.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8111C",
+   "phone": "(510) 555-8417",
+   "placedAt": 1790710468182.058,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 35.96,
+   "tax": 3.87,
+   "tip": 0,
+   "total": 39.83,
+   "type": "Pickup"
+  },
+  {
+   "id": "o133",
+   "courier": null,
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": null
+    }
+   ],
+   "number": "#8110",
+   "phone": "(510) 555-6501",
+   "placedAt": 1790698167082.4294,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 6.99,
+   "tax": 0.75,
+   "tip": 0,
+   "total": 7.74,
+   "type": "Pickup"
+  },
+  {
+   "id": "o134",
+   "courier": "Brandon",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Flame Platter",
+     "qty": 1,
+     "price": 28.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 2,
+     "price": 22.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8109E",
+   "phone": "(510) 555-5930",
+   "placedAt": 1790685815007.917,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 118.95,
+   "tax": 12.79,
+   "tip": 23.47,
+   "total": 155.21,
+   "type": "Delivery"
+  },
+  {
+   "id": "o135",
+   "courier": "Jasmine",
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Lamb Kabab",
+     "qty": 2,
+     "price": 24.99,
+     "note": null
+    }
+   ],
+   "number": "#8108",
+   "phone": "(510) 555-5283",
+   "placedAt": 1790673412130.06,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 110.95,
+   "tax": 11.93,
+   "tip": 18.71,
+   "total": 141.59,
+   "type": "Delivery"
+  },
+  {
+   "id": "o136",
+   "courier": "Miguel",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "GH-8107G",
+   "phone": "(510) 555-2358",
+   "placedAt": 1790660958618.5518,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 19.99,
+   "tax": 2.15,
+   "tip": 2.74,
+   "total": 24.88,
+   "type": "Delivery"
+  },
+  {
+   "id": "o137",
+   "courier": "Andre",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 2,
+     "price": 17.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8106H",
+   "phone": "(510) 555-8740",
+   "placedAt": 1790648454641.272,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 35.98,
+   "tax": 3.87,
+   "tip": 6.21,
+   "total": 46.06,
+   "type": "Delivery"
+  },
+  {
+   "id": "o138",
+   "courier": "Miguel",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "GH-8105I",
+   "phone": "(510) 555-3066",
+   "placedAt": 1790635900364.3206,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 8.99,
+   "tax": 0.97,
+   "tip": 1.68,
+   "total": 11.64,
+   "type": "Delivery"
+  },
+  {
+   "id": "o139",
+   "courier": "Tina",
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 2,
+     "price": 6.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "UE-8104J",
+   "phone": "(510) 555-3862",
+   "placedAt": 1790623295952.0483,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 13.98,
+   "tax": 1.5,
+   "tip": 2.52,
+   "total": 18,
+   "type": "Delivery"
+  },
+  {
+   "id": "o140",
+   "courier": "Jasmine",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 2,
+     "price": 8.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8103K",
+   "phone": "(510) 555-2845",
+   "placedAt": 1790610641567.0884,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 59.95,
+   "tax": 6.44,
+   "tip": 8.96,
+   "total": 75.35,
+   "type": "Delivery"
+  },
+  {
+   "id": "o141",
+   "courier": "Rahul",
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    },
+    {
+     "name": "Texan Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8102L",
+   "phone": "(510) 555-2705",
+   "placedAt": 1790597937370.3855,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 28.98,
+   "tax": 3.12,
+   "tip": 4.59,
+   "total": 36.69,
+   "type": "Delivery"
+  },
+  {
+   "id": "o142",
+   "courier": "Brandon",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8101M",
+   "phone": "(510) 555-2798",
+   "placedAt": 1790585183521.2266,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 52.97,
+   "tax": 5.69,
+   "tip": 8.27,
+   "total": 66.93,
+   "type": "Delivery"
+  },
+  {
+   "id": "o143",
+   "courier": "Rahul",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8100N",
+   "phone": "(510) 555-6756",
+   "placedAt": 1790572380177.269,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 49.96,
+   "tax": 5.37,
+   "tip": 9.65,
+   "total": 64.98,
+   "type": "Delivery"
+  },
+  {
+   "id": "o144",
+   "courier": null,
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "#8099",
+   "phone": "(510) 555-6871",
+   "placedAt": 1790559527494.5679,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 0,
+   "total": 24.35,
+   "type": "Pickup"
+  },
+  {
+   "id": "o145",
+   "courier": "Rahul",
+   "customer": "Ayesha K.",
+   "lines": [
+    {
+     "name": "Bacon Cheddar Burger",
+     "qty": 2,
+     "price": 14.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Side of Hummus",
+     "qty": 1,
+     "price": 6.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8098P",
+   "phone": "(510) 555-7077",
+   "placedAt": 1790546625627.604,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 49.96,
+   "tax": 5.37,
+   "tip": 7.87,
+   "total": 63.2,
+   "type": "Delivery"
+  },
+  {
+   "id": "o146",
+   "courier": null,
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "#8097",
+   "phone": "(510) 555-6361",
+   "placedAt": 1790533674729.3108,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 81.96,
+   "tax": 8.81,
+   "tip": 0,
+   "total": 90.77,
+   "type": "Pickup"
+  },
+  {
+   "id": "o147",
+   "courier": "Brandon",
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8096R",
+   "phone": "(510) 555-2621",
+   "placedAt": 1790520674951.099,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 11.99,
+   "tax": 1.29,
+   "tip": 1.5,
+   "total": 14.78,
+   "type": "Delivery"
+  },
+  {
+   "id": "o148",
+   "courier": null,
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8095S",
+   "phone": "(510) 555-2370",
+   "placedAt": 1790507626442.8845,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 6.99,
+   "tax": 0.75,
+   "tip": 0,
+   "total": 7.74,
+   "type": "Pickup"
+  },
+  {
+   "id": "o149",
+   "courier": null,
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 2,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8094",
+   "phone": "(510) 555-7718",
+   "placedAt": 1790494529353.11,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 35.97,
+   "tax": 3.87,
+   "tip": 0,
+   "total": 39.84,
+   "type": "Pickup"
+  },
+  {
+   "id": "o150",
+   "courier": "Brandon",
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8093U",
+   "phone": "(510) 555-6575",
+   "placedAt": 1790481383828.7722,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 38.98,
+   "tax": 4.19,
+   "tip": 6.54,
+   "total": 49.71,
+   "type": "Delivery"
+  },
+  {
+   "id": "o151",
+   "courier": null,
+   "customer": "Carlos V.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8092V",
+   "phone": "(510) 555-7229",
+   "placedAt": 1790468190015.4434,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 0,
+   "total": 24.35,
+   "type": "Pickup"
+  },
+  {
+   "id": "o152",
+   "courier": "Miguel",
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Fries",
+     "qty": 2,
+     "price": 3.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8091W",
+   "phone": "(510) 555-7058",
+   "placedAt": 1790454948057.2957,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 32.97,
+   "tax": 3.54,
+   "tip": 4.96,
+   "total": 41.47,
+   "type": "Delivery"
+  },
+  {
+   "id": "o153",
+   "courier": null,
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": null
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8090X",
+   "phone": "(510) 555-5848",
+   "placedAt": 1790441658097.1233,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 57.96,
+   "tax": 6.23,
+   "tip": 0,
+   "total": 64.19,
+   "type": "Pickup"
+  },
+  {
+   "id": "o154",
+   "courier": "Jasmine",
+   "customer": "Emily C.",
+   "lines": [
+    {
+     "name": "Chicken Tenders with Fries",
+     "qty": 1,
+     "price": 14.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8089Y",
+   "phone": "(510) 555-6244",
+   "placedAt": 1790428320276.365,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 14.99,
+   "tax": 1.61,
+   "tip": 1.95,
+   "total": 18.55,
+   "type": "Delivery"
+  },
+  {
+   "id": "o155",
+   "courier": "Jasmine",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8088Z",
+   "phone": "(510) 555-4402",
+   "placedAt": 1790414934735.1248,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 17.99,
+   "tax": 1.93,
+   "tip": 3.18,
+   "total": 23.1,
+   "type": "Delivery"
+  },
+  {
+   "id": "o156",
+   "courier": null,
+   "customer": "Fatima A.",
+   "lines": [
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 2,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8087A",
+   "phone": "(510) 555-8298",
+   "placedAt": 1790401501612.1946,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 91.96,
+   "tax": 9.89,
+   "tip": 0,
+   "total": 101.85,
+   "type": "Pickup"
+  },
+  {
+   "id": "o157",
+   "courier": "Rahul",
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 2,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "UE-8086B",
+   "phone": "(510) 555-8758",
+   "placedAt": 1790388021045.0728,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 44.97,
+   "tax": 4.83,
+   "tip": 4.78,
+   "total": 54.58,
+   "type": "Delivery"
+  },
+  {
+   "id": "o158",
+   "courier": "Jasmine",
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Curly Fries",
+     "qty": 1,
+     "price": 4.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    },
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8085",
+   "phone": "(510) 555-2451",
+   "placedAt": 1790374493169.9866,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 51.97,
+   "tax": 5.59,
+   "tip": 10.31,
+   "total": 67.87,
+   "type": "Delivery"
+  },
+  {
+   "id": "o159",
+   "courier": "Andre",
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 2,
+     "price": 10.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 2,
+     "price": 34.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8084D",
+   "phone": "(510) 555-7154",
+   "placedAt": 1790360918121.9104,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 91.96,
+   "tax": 9.89,
+   "tip": 15.25,
+   "total": 117.1,
+   "type": "Delivery"
+  },
+  {
+   "id": "o160",
+   "courier": null,
+   "customer": "Zara Q.",
+   "lines": [
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "UE-8083E",
+   "phone": "(510) 555-3876",
+   "placedAt": 1790347296034.5854,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 34.99,
+   "tax": 3.76,
+   "tip": 0,
+   "total": 38.75,
+   "type": "Pickup"
+  },
+  {
+   "id": "o161",
+   "courier": "Rahul",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Baba Ganoush",
+     "qty": 2,
+     "price": 8.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8082F",
+   "phone": "(510) 555-3224",
+   "placedAt": 1790333627040.5396,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 40.96,
+   "tax": 4.4,
+   "tip": 4.36,
+   "total": 49.72,
+   "type": "Delivery"
+  },
+  {
+   "id": "o162",
+   "courier": "Tina",
+   "customer": "Hassan B.",
+   "lines": [
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    },
+    {
+     "name": "Wings (8 pcs)",
+     "qty": 1,
+     "price": 17.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "UE-8081G",
+   "phone": "(510) 555-8490",
+   "placedAt": 1790319911271.1038,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 45.97,
+   "tax": 4.94,
+   "tip": 4.97,
+   "total": 55.88,
+   "type": "Delivery"
+  },
+  {
+   "id": "o163",
+   "courier": "Jasmine",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "DD-8080H",
+   "phone": "(510) 555-6686",
+   "placedAt": 1790306148856.4324,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 16.99,
+   "tax": 1.83,
+   "tip": 2.19,
+   "total": 21.01,
+   "type": "Delivery"
+  },
+  {
+   "id": "o164",
+   "courier": null,
+   "customer": "Rachel D.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 2,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Chicken Nuggets with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "UE-8079I",
+   "phone": "(510) 555-3491",
+   "placedAt": 1790292339925.5198,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 37.97,
+   "tax": 4.08,
+   "tip": 0,
+   "total": 42.05,
+   "type": "Pickup"
+  },
+  {
+   "id": "o165",
+   "courier": "Jasmine",
+   "customer": "Ahmed Y.",
+   "lines": [
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "GH-8078J",
+   "phone": "(510) 555-7406",
+   "placedAt": 1790278484606.2178,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 19.99,
+   "tax": 2.15,
+   "tip": 3.1,
+   "total": 25.24,
+   "type": "Delivery"
+  },
+  {
+   "id": "o166",
+   "courier": "Jasmine",
+   "customer": "Daniel R.",
+   "lines": [
+    {
+     "name": "Cheese Pizza with Fries",
+     "qty": 1,
+     "price": 11.99,
+     "note": null
+    },
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Philly Wrap",
+     "qty": 1,
+     "price": 13.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "GH-8077K",
+   "phone": "(510) 555-4544",
+   "placedAt": 1790264583025.2527,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 38.97,
+   "tax": 4.19,
+   "tip": 5.48,
+   "total": 48.64,
+   "type": "Delivery"
+  },
+  {
+   "id": "o167",
+   "courier": "Jasmine",
+   "customer": "Luis G.",
+   "lines": [
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Flame Burger",
+     "qty": 1,
+     "price": 16.99,
+     "note": null
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Sauce on the side"
+    }
+   ],
+   "number": "DD-8076L",
+   "phone": "(510) 555-1265",
+   "placedAt": 1790250635308.2424,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 38.97,
+   "tax": 4.19,
+   "tip": 6.82,
+   "total": 49.98,
+   "type": "Delivery"
+  },
+  {
+   "id": "o168",
+   "courier": "Miguel",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "DD-8075M",
+   "phone": "(510) 555-1710",
+   "placedAt": 1790236641579.7122,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 56.98,
+   "tax": 6.13,
+   "tip": 7.31,
+   "total": 70.42,
+   "type": "Delivery"
+  },
+  {
+   "id": "o169",
+   "courier": "Andre",
+   "customer": "Marcus T.",
+   "lines": [
+    {
+     "name": "Gyro Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Fried Calamari",
+     "qty": 1,
+     "price": 12.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8074N",
+   "phone": "(510) 555-1911",
+   "placedAt": 1790222601963.11,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 45.96,
+   "tax": 4.94,
+   "tip": 8.14,
+   "total": 59.04,
+   "type": "Delivery"
+  },
+  {
+   "id": "o170",
+   "courier": "Rahul",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Classic Cheese Burger",
+     "qty": 2,
+     "price": 10.99,
+     "note": "Sauce on the side"
+    },
+    {
+     "name": "BBQ Lamb Chops",
+     "qty": 1,
+     "price": 34.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Falafel Wrap",
+     "qty": 1,
+     "price": 10.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Chicken Kabab",
+     "qty": 1,
+     "price": 22.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "DD-8073O",
+   "phone": "(510) 555-8884",
+   "placedAt": 1790208516580.824,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 90.95,
+   "tax": 9.78,
+   "tip": 10.53,
+   "total": 111.26,
+   "type": "Delivery"
+  },
+  {
+   "id": "o171",
+   "courier": null,
+   "customer": "Tyler J.",
+   "lines": [
+    {
+     "name": "Gyro Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "#8072",
+   "phone": "(510) 555-2528",
+   "placedAt": 1790194385554.196,
+   "provider": "website",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 0,
+   "total": 24.35,
+   "type": "Pickup"
+  },
+  {
+   "id": "o172",
+   "courier": "Tina",
+   "customer": "Sofia M.",
+   "lines": [
+    {
+     "name": "Combo Kabab",
+     "qty": 1,
+     "price": 34.99,
+     "note": null
+    }
+   ],
+   "number": "DD-8071Q",
+   "phone": "(510) 555-9643",
+   "placedAt": 1790180209003.5378,
+   "provider": "doordash",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 34.99,
+   "tax": 3.76,
+   "tip": 3.89,
+   "total": 42.64,
+   "type": "Delivery"
+  },
+  {
+   "id": "o173",
+   "courier": "Jasmine",
+   "customer": "Mei L.",
+   "lines": [
+    {
+     "name": "Combo Platter",
+     "qty": 1,
+     "price": 24.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "#8070",
+   "phone": "(510) 555-3172",
+   "placedAt": 1790165987048.1445,
+   "provider": "website",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 24.99,
+   "tax": 2.69,
+   "tip": 4.47,
+   "total": 32.15,
+   "type": "Delivery"
+  },
+  {
+   "id": "o174",
+   "courier": "Miguel",
+   "customer": "Jordan L.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 1,
+     "price": 6.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8069S",
+   "phone": "(510) 555-2760",
+   "placedAt": 1790151719806.3103,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 6.99,
+   "tax": 0.75,
+   "tip": 0.86,
+   "total": 8.6,
+   "type": "Delivery"
+  },
+  {
+   "id": "o175",
+   "courier": "Tina",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Curly Fries",
+     "qty": 2,
+     "price": 4.99,
+     "note": "Spicy!"
+    }
+   ],
+   "number": "GH-8068T",
+   "phone": "(510) 555-2033",
+   "placedAt": 1790137407395.3418,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 9.98,
+   "tax": 1.07,
+   "tip": 1.92,
+   "total": 12.97,
+   "type": "Delivery"
+  },
+  {
+   "id": "o176",
+   "courier": null,
+   "customer": "Nadia F.",
+   "lines": [
+    {
+     "name": "Falafel Platter",
+     "qty": 1,
+     "price": 19.99,
+     "note": null
+    },
+    {
+     "name": "Baba Ganoush",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Chicken Wrap",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Butterfly Shrimp with Fries",
+     "qty": 1,
+     "price": 12.99,
+     "note": "No onions"
+    }
+   ],
+   "number": "GH-8067U",
+   "phone": "(510) 555-1803",
+   "placedAt": 1790123049931.5725,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 54.96,
+   "tax": 5.91,
+   "tip": 0,
+   "total": 60.87,
+   "type": "Pickup"
+  },
+  {
+   "id": "o177",
+   "courier": "Jasmine",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Avocado Ranch Burger",
+     "qty": 1,
+     "price": 11.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "GH-8066V",
+   "phone": "(510) 555-8013",
+   "placedAt": 1790108647530.3755,
+   "provider": "grubhub",
+   "status": "canceled",
+   "storeId": "hayward",
+   "subtotal": 11.99,
+   "tax": 1.29,
+   "tip": 1.94,
+   "total": 15.22,
+   "type": "Delivery"
+  },
+  {
+   "id": "o178",
+   "courier": "Rahul",
+   "customer": "Kevin P.",
+   "lines": [
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": null
+    }
+   ],
+   "number": "GH-8065W",
+   "phone": "(510) 555-5640",
+   "placedAt": 1790094200306.1772,
+   "provider": "grubhub",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 21.99,
+   "tax": 2.36,
+   "tip": 2.67,
+   "total": 27.02,
+   "type": "Delivery"
+  },
+  {
+   "id": "o179",
+   "courier": "Tina",
+   "customer": "Grace W.",
+   "lines": [
+    {
+     "name": "Onion Rings",
+     "qty": 2,
+     "price": 6.99,
+     "note": "No onions"
+    },
+    {
+     "name": "Chicken Platter",
+     "qty": 1,
+     "price": 21.99,
+     "note": "Spicy!"
+    },
+    {
+     "name": "Quesadilla",
+     "qty": 1,
+     "price": 12.99,
+     "note": "Extra garlic sauce please"
+    },
+    {
+     "name": "Dolma",
+     "qty": 1,
+     "price": 8.99,
+     "note": "Extra garlic sauce please"
+    }
+   ],
+   "number": "UE-8064X",
+   "phone": "(510) 555-7463",
+   "placedAt": 1790079708372.471,
+   "provider": "ubereats",
+   "status": "completed",
+   "storeId": "hayward",
+   "subtotal": 57.95,
+   "tax": 6.23,
+   "tip": 7.69,
+   "total": 71.87,
+   "type": "Delivery"
+  }
+ ]
+}
