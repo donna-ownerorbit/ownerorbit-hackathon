@@ -1,0 +1,6 @@
+.env*
+!.env.example
+.profiles/
+evidence/
+node_modules/
+.data/

@@ -1,0 +1,40 @@
+# Source of truth for every skill. Status: requested|mapped|draft|shadow|supervised|live|deprecated
+# risk: read|low|medium|high|money  (see docs/request-funnel.md)
+skills:
+  # --- Demo / clone site (orders-dashboard) ---
+  - id: demo.item.set_availability
+    platform: demo
+    domain: in_unit
+    risk: low
+    version: 1
+    status: live
+    code: ownerorbit/src/skills/menu-items.ts
+  - id: demo.item.set_price
+    platform: demo
+    domain: in_unit
+    risk: medium
+    version: 1
+    status: live
+    code: ownerorbit/src/skills/menu-items.ts
+
+  # --- Orders.co (Falafel Flare Hayward, Tracy) ---
+  - { id: ordersco.items.list_sold_out,      platform: ordersco, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: ordersco.item.get_price,           platform: ordersco, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: ordersco.orders.today,             platform: ordersco, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: ordersco.orders.cancellations,     platform: ordersco, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: ordersco.chargebacks.list,         platform: ordersco, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: ordersco.item.set_availability,    platform: ordersco, domain: in_unit,          risk: low,    version: 1, status: requested }
+  - { id: ordersco.item.set_price,           platform: ordersco, domain: in_unit,          risk: medium, version: 1, status: requested }
+  - { id: ordersco.modifier.set_price,       platform: ordersco, domain: in_unit,          risk: medium, version: 1, status: requested }
+
+  # --- UrbanPiper (Kamdesh Oakland) ---
+  - { id: urbanpiper.items.list_sold_out,    platform: urbanpiper, domain: customer_edge_L2, risk: read,   version: 1, status: requested }
+  - { id: urbanpiper.item.set_availability,  platform: urbanpiper, domain: in_unit,          risk: low,    version: 1, status: requested }
+  - { id: urbanpiper.item.set_price,         platform: urbanpiper, domain: in_unit,          risk: medium, version: 1, status: requested }
+
+  # --- Yelp (Falafel Flare Hayward) ---
+  - { id: yelp.reviews.list_recent,          platform: yelp, domain: customer_edge_L3, risk: read, version: 1, status: requested }
+
+  # --- DoorDash / Uber Eats / Grubhub merchant portals (Sunnyvale first) ---
+  - { id: doordash.items.list_sold_out,      platform: doordash, domain: customer_edge_L3, risk: read, version: 1, status: requested }
+  - { id: ubereats.items.list_sold_out,      platform: ubereats, domain: customer_edge_L3, risk: read, version: 1, status: requested }
