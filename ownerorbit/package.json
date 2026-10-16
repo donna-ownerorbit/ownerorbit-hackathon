@@ -1,0 +1,43 @@
+{
+  "name": "ownerorbit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OwnerOrbit core: iMessage (BlueBubbles) -> planner -> skill registry -> Playwright -> verify -> trace/evidence",
+  "scripts": {
+    "server": "tsx src/server.ts",
+    "chat": "tsx src/cli/chat.ts",
+    "skills": "tsx src/cli/skills.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "e2e": "tsx test/e2e.ts",
+    "typecheck": "tsc --noEmit",
+    "preflight": "tsx src/cli/preflight.ts",
+    "demo": "tsx src/cli/demo.ts",
+    "stage": "tsx src/server.ts --stage",
+    "worker": "tsx src/cli/worker.ts",
+    "inbox": "tsx src/cli/inbox.ts",
+    "principals": "tsx src/cli/principals.ts",
+    "github": "tsx src/cli/github.ts",
+    "imessage": "tsx src/cli/imessage.ts",
+    "bluebubbles": "tsx src/cli/bluebubbles.ts",
+    "evals": "tsx src/cli/evals.ts",
+    "verify": "tsx src/cli/verify.ts",
+    "demo:imessage": "tsx src/cli/demo-imessage.ts",
+    "demo:reset": "tsx src/cli/demo-reset.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "mongodb": "^7.7.0",
+    "playwright": "^1.64.0",
+    "raindrop-ai": "^1.0.1",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

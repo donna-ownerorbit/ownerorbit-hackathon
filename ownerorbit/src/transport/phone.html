@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donna · Live Demo</title>
+<style>
+  :root {
+    --bg: #eef0f4; --panel: #ffffff; --ink: #111114; --muted: #6b6f78; --line: #e3e5ea;
+    --blue: #0a84ff; --gray: #e9e9eb; --green: #1f9d55; --red: #d93a3a; --amber: #c27c0e; --accent: #f28c28;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1013; --panel: #17181c; --ink: #f2f2f5; --muted: #9a9ea8; --line: #2a2c33; --gray: #2b2c31; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 14px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+  .top { display: flex; align-items: center; gap: 14px; padding: 12px 20px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  .brand { font-weight: 700; letter-spacing: .01em; }
+  .brand span { color: var(--accent); }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); font-size: 12px; color: var(--muted); background: var(--panel); }
+  .pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); display: inline-block; }
+  .pill.on i { background: var(--green); } .pill.warn i { background: var(--amber); }
+  .stage { display: grid; grid-template-columns: 420px 1fr; gap: 20px; padding: 20px; height: calc(100% - 55px); }
+  @media (max-width: 980px) { .stage { grid-template-columns: 1fr; height: auto; } .site { height: 70vh; } }
+
+  /* phone */
+  .phone { justify-self: center; width: 400px; max-width: 100%; height: 100%; min-height: 640px; max-height: 860px; background: #000; border-radius: 52px; padding: 12px; box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+  .screen { position: relative; height: 100%; border-radius: 42px; overflow: hidden; background: var(--panel); display: flex; flex-direction: column; }
+  .island { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 110px; height: 30px; border-radius: 20px; background: #000; z-index: 3; }
+  .status { display: flex; justify-content: space-between; padding: 14px 28px 0; font-weight: 600; font-size: 14px; height: 44px; }
+  .head { text-align: center; padding: 6px 0 10px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 92%, transparent); }
+  .avatar { width: 46px; height: 46px; border-radius: 50%; margin: 0 auto 4px; display: grid; place-items: center; font-weight: 700; color: #fff; background: linear-gradient(135deg, #f6a24a, #e0661b); }
+  .head .name { font-size: 12px; font-weight: 600; }
+  .head .sub { font-size: 11px; color: var(--muted); }
+  .thread { flex: 1; overflow-y: auto; padding: 14px 12px 8px; display: flex; flex-direction: column; gap: 4px; scroll-behavior: smooth; }
+  .row { display: flex; flex-direction: column; }
+  .row.me { align-items: flex-end; } .row.them { align-items: flex-start; }
+  .bubble { max-width: 78%; padding: 8px 13px; border-radius: 19px; white-space: pre-wrap; word-wrap: break-word; font-size: 15px; line-height: 1.32; animation: pop .18s ease-out; }
+  .me .bubble { background: var(--blue); color: #fff; border-bottom-right-radius: 6px; }
+  .them .bubble { background: var(--gray); color: var(--ink); border-bottom-left-radius: 6px; }
+  .bubble a { color: inherit; text-decoration: underline; word-break: break-all; }
+  .gap { height: 8px; }
+  .meta { font-size: 11px; color: var(--muted); margin: 3px 8px 0; cursor: pointer; user-select: none; }
+  .meta b { font-weight: 600; } .meta .ok { color: var(--green); } .meta .bad { color: var(--red); }
+  .detail { display: none; font-size: 11.5px; color: var(--muted); margin: 4px 8px 2px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; max-width: 86%; background: var(--panel); }
+  .detail.open { display: block; }
+  .detail div { margin: 1px 0; }
+  .delivered { font-size: 11px; color: var(--muted); margin: 2px 6px 0; }
+  .typing { display: inline-flex; gap: 4px; padding: 12px 14px; background: var(--gray); border-radius: 19px; border-bottom-left-radius: 6px; }
+  .typing span { width: 7px; height: 7px; border-radius: 50%; background: #9a9aa0; animation: blink 1.2s infinite; }
+  .typing span:nth-child(2) { animation-delay: .2s; } .typing span:nth-child(3) { animation-delay: .4s; }
+  .working { font-size: 11px; color: var(--muted); margin: 3px 8px 0; }
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding: 8px 10px 2px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 6px 11px; font-size: 12.5px; cursor: pointer; }
+  .chip:hover { border-color: var(--blue); color: var(--blue); }
+  .compose { display: flex; align-items: center; gap: 8px; padding: 8px 12px 26px; }
+  .compose input { flex: 1; border: 1px solid var(--line); border-radius: 20px; padding: 9px 14px; font-size: 15px; background: var(--panel); color: var(--ink); outline: none; }
+  .compose input:focus { border-color: var(--blue); }
+  .send { width: 34px; height: 34px; border-radius: 50%; border: 0; background: var(--blue); color: #fff; font-size: 18px; cursor: pointer; display: grid; place-items: center; }
+  .send:disabled { background: #b8c7d9; cursor: default; }
+
+  /* website */
+  .site { display: flex; flex-direction: column; background: var(--panel); border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.08); min-height: 0; }
+  .bar { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .dots { display: flex; gap: 6px; } .dots i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f57; } .dots i:nth-child(2) { background: #febc2e; } .dots i:nth-child(3) { background: #28c840; }
+  .url { flex: 1; background: var(--bg); border-radius: 8px; padding: 6px 12px; font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tabs { display: flex; gap: 4px; }
+  .tab { border: 0; background: transparent; color: var(--muted); padding: 6px 10px; border-radius: 8px; cursor: pointer; font-size: 12.5px; }
+  .tab.on, .tab:hover { background: var(--bg); color: var(--ink); }
+  .flash { position: relative; }
+  .flash::after { content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 0 3px var(--accent); border-radius: 0 0 14px 14px; animation: flash 1.6s ease-out forwards; }
+  iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+  .frame { flex: 1; display: flex; min-height: 0; }
+  .note { font-size: 12px; color: var(--muted); padding: 8px 12px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; }
+  .link { background: none; border: 0; color: var(--blue); cursor: pointer; font-size: 12px; padding: 0; }
+  @keyframes pop { from { transform: scale(.96); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes blink { 0%, 80%, 100% { opacity: .3; } 40% { opacity: 1; } }
+  @keyframes flash { from { opacity: 1; } to { opacity: 0; } }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand">OwnerOrbit · <span>Donna</span> live demo</div>
+    <div class="pills" id="pills"></div>
+  </div>
+  <div class="stage">
+    <div class="phone"><div class="screen">
+      <div class="island"></div>
+      <div class="status"><span id="clock">9:41</span><span>●●● ⌁</span></div>
+      <div class="head"><div class="avatar">D</div><div class="name">Donna</div><div class="sub" id="sub">iMessage</div></div>
+      <div class="thread" id="thread"></div>
+      <div class="chips" id="chips"></div>
+      <form class="compose" id="compose" autocomplete="off">
+        <input id="input" placeholder="iMessage" aria-label="Message Donna">
+        <button class="send" id="send" aria-label="Send" disabled>↑</button>
+      </form>
+    </div></div>
+    <div class="site" id="site">
+      <div class="bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="url" id="url">—</div>
+        <div class="tabs" id="tabs"></div>
+      </div>
+      <div class="frame" id="frame"><iframe id="web" title="Restaurant website"></iframe></div>
+      <div class="note"><span id="note">The live Vercel site. It refreshes after every change Donna makes.</span><button class="link" id="clear">Clear conversation</button></div>
+    </div>
+  </div>
+<script>
+const SCRIPT = [
+  ['86 nuggets', 'Mark chicken nuggets out of stock'],
+  ['Nuggets back', 'nuggets are back'],
+  ['Catering goal', 'We need a corporate catering page to grow catering to $15k/month. We do about $6k now'],
+  ['YES', 'YES'],
+  ["What's 86'd?", "What's 86'd right now?"],
+  ['DoorDash hours', 'Our DoorDash listing still shows the old hours, how do I fix that?'],
+  ['Morning brief', 'morning brief'],
+  ['Undo', 'undo'],
+]
+const $ = (id) => document.getElementById(id)
+let cfg = null, last = '', open = new Set(), seenOut = 0, sending = false
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
+const linkify = (s) => esc(s).replace(/https?:\/\/[^\s)]+/g, (u) => `<a href="${u}" target="_blank" rel="noreferrer">${u}</a>`)
+const secs = (ms) => ms < 1000 ? ms + 'ms' : (ms / 1000).toFixed(1) + 's'
+
+function pills() {
+  const p = [
+    ['BlueBubbles', cfg.bluebubbles === 'real' ? 'live (this phone: mock)' : 'mock stand-in', cfg.bluebubbles === 'real' ? 'on' : 'warn'],
+    ['Claude Haiku', cfg.haiku ? 'on' : 'off', cfg.haiku ? 'on' : ''],
+    ['browser-exec', cfg.browserExec ? 'on' : 'built-in skills', cfg.browserExec ? 'on' : 'warn'],
+    ['Raindrop', cfg.raindrop ? 'tracing' : 'evals local', cfg.raindrop ? 'on' : 'warn'],
+    ['MongoDB', 'inbox', 'on'],
+  ]
+  $('pills').innerHTML = p.map(([k, v, c]) => `<span class="pill ${c}"><i></i>${k}: ${v}</span>`).join('')
+  $('sub').textContent = `${cfg.phone} → Donna · mock iMessage via BlueBubbles stand-in`
+}
+
+const TABS = [['Menu', '/menu/overview'], ['Website', '/website'], ['Catering page', '/p/catering'], ['Skills', '/skills']]
+function go(path, flash) {
+  const u = path.startsWith('http') ? path : cfg.site + path
+  $('web').src = u
+  $('url').textContent = u.replace(/^https?:\/\//, '')
+  document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', u.endsWith(t.dataset.path)))
+  if (flash) { const f = $('frame'); f.classList.remove('flash'); void f.offsetWidth; f.classList.add('flash') }
+}
+
+function metaLine(run) {
+  if (!run || !run.planner) return ''
+  // Only changes carry verification (read-only skills report verified: null).
+  const writes = (run.results || []).filter((r) => r.verified === true || r.verified === false)
+  const verified = writes.filter((r) => r.verified).length
+  const ev = run.evals || [], pass = ev.filter((e) => e.pass).length
+  const via = [...new Set((run.results || []).map((r) => r.via).filter(Boolean))]
+  const bits = [`<b>${run.planner === 'haiku' ? 'Claude Haiku' : run.planner === 'confirm' ? 'approved' : run.planner === 'rules' ? 'fast path' : run.planner}</b>`, secs(run.ms || 0)]
+  if (writes.length) bits.push(verified === writes.length ? `<span class="ok">✓ verified ${verified}/${writes.length}</span>` : `<span class="bad">✗ verified ${verified}/${writes.length}</span>`)
+  if (via.includes('browser-exec')) bits.push('browser-exec')
+  if (ev.length) bits.push(pass === ev.length ? `<span class="ok">evals ${pass}/${ev.length}</span>` : `<span class="bad">evals ${pass}/${ev.length}</span>`)
+  return bits.join(' · ')
+}
+function detail(run) {
+  const rs = (run.results || []).map((r) => `<div>${r.outcome === 'failed' ? '✗' : '•'} <b>${esc(r.skill)}</b> — ${esc(r.outcome)}${r.verified ? ' ✓' : ''}${r.via ? ' · ' + esc(r.via) : ''}</div>`).join('')
+  const ev = (run.evals || []).map((e) => `<div>${e.pass ? '✅' : '❌'} ${esc(e.name)} <span>(${esc(e.detail)})</span></div>`).join('')
+  return (rs || '<div>No skills ran (conversation only).</div>') + (ev ? `<div style="margin-top:6px"><b>Evals</b> → Raindrop</div>${ev}` : '')
+}
+
+function render(data) {
+  const key = JSON.stringify(data)
+  if (key === last) return
+  last = key
+  const t = $('thread'), atBottom = t.scrollHeight - t.scrollTop - t.clientHeight < 80
+  const out = []
+  const msgs = data.messages
+  msgs.forEach((m, i) => {
+    const prev = msgs[i - 1]
+    if (prev && prev.dir !== m.dir) out.push('<div class="gap"></div>')
+    if (m.dir === 'in') {
+      out.push(`<div class="row me"><div class="bubble">${linkify(m.text)}</div></div>`)
+      const run = data.runs[m.guid]
+      const answered = msgs.slice(i + 1).some((x) => x.dir === 'out' && x.ref === m.guid)
+      const isLastIn = !msgs.slice(i + 1).some((x) => x.dir === 'in')
+      if (!answered && isLastIn && run && ['sent', 'queued', 'processing'].includes(run.status)) {
+        out.push(`<div class="gap"></div><div class="row them"><div class="typing"><span></span><span></span><span></span></div><div class="working">${run.status === 'processing' ? 'Donna is working on the live site…' : 'Delivered'}</div></div>`)
+      } else if (isLastIn && run && run.status === 'done' && !answered) {
+        out.push('<div class="delivered">Delivered</div>')
+      }
+    } else {
+      const lastOfRef = !msgs.slice(i + 1).some((x) => x.dir === 'out' && x.ref === m.ref)
+      const run = m.ref ? data.runs[m.ref] : null
+      out.push(`<div class="row them"><div class="bubble">${linkify(m.text)}</div>${lastOfRef && run && run.planner ? `<div class="meta" data-ref="${m.ref}">${metaLine(run)} ▾</div><div class="detail ${open.has(m.ref) ? 'open' : ''}" id="d-${m.ref}">${detail(run)}</div>` : ''}</div>`)
+    }
+  })
+  if (!msgs.length) out.push(`<div class="working" style="text-align:center;margin-top:30px">Text Donna like you'd text your GM.<br>Tap a suggestion below to run the demo.</div>`)
+  t.innerHTML = out.join('')
+  t.querySelectorAll('.meta').forEach((el) => el.onclick = () => { const r = el.dataset.ref; open.has(r) ? open.delete(r) : open.add(r); $('d-' + r).classList.toggle('open') })
+  const newReply = msgs.filter((m) => m.dir === 'out').length > seenOut
+  if (atBottom || sending || newReply) t.scrollTop = t.scrollHeight
+
+  // Follow Donna's work on the website pane.
+  const outs = msgs.filter((m) => m.dir === 'out')
+  if (outs.length > seenOut) {
+    const fresh = outs.slice(seenOut)
+    seenOut = outs.length
+    const lastMsg = fresh[fresh.length - 1]
+    const run = lastMsg.ref ? data.runs[lastMsg.ref] : null
+    const url = (lastMsg.text.match(/https?:\/\/[^\s)]+/) || [])[0]
+    const skills = (run && run.results || []).map((r) => r.skill)
+    if (url && url.startsWith(cfg.site)) go(url.replace(/[.,]$/, ''), true)
+    else if (skills.some((s) => s.startsWith('menu.'))) go('/menu/overview', true)
+    else if (skills.some((s) => s.startsWith('website.'))) go('/website', true)
+    else if (skills.some((s) => s.startsWith('orders.'))) go('/orders', true)
+    sending = false
+  }
+}
+
+async function poll() {
+  try { render(await (await fetch('/phone/thread', { cache: 'no-store' })).json()) } catch {}
+  setTimeout(poll, 700)
+}
+
+async function send(text) {
+  text = text.trim()
+  if (!text) return
+  sending = true
+  $('input').value = ''; $('send').disabled = true
+  let ok = false
+  try { ok = (await fetch('/phone/send', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text }) })).ok } catch {}
+  if (!ok) {
+    sending = false
+    const t = $('thread')
+    t.insertAdjacentHTML('beforeend', `<div class="row me"><div class="bubble" style="opacity:.55">${esc(text)}</div><div class="delivered" style="color:var(--red);cursor:pointer" title="Tap to retry">Not Delivered · tap to retry</div></div>`)
+    const n = t.lastElementChild; n.querySelector('.delivered').onclick = () => { n.remove(); send(text) }
+    t.scrollTop = t.scrollHeight
+  }
+}
+
+async function boot() {
+  // Input works immediately; nothing below depends on the network.
+  $('chips').innerHTML = SCRIPT.map(([label, text], i) => `<button class="chip" data-i="${i}" title="${esc(text)}">${esc(label)}</button>`).join('')
+  document.querySelectorAll('.chip').forEach((c) => c.onclick = () => send(SCRIPT[+c.dataset.i][1]))
+  $('input').oninput = () => { $('send').disabled = !$('input').value.trim() }
+  $('compose').onsubmit = (e) => { e.preventDefault(); send($('input').value) }
+  cfg = await (await fetch('/phone/config')).json()
+  pills()
+  $('tabs').innerHTML = TABS.map(([n, p]) => `<button class="tab" data-path="${p}">${n}</button>`).join('')
+  document.querySelectorAll('.tab').forEach((t) => t.onclick = () => go(t.dataset.path))
+  go('/menu/overview')
+  $('clear').onclick = async () => { await fetch('/phone/clear', { method: 'POST' }); seenOut = 0; last = '' }
+  const tick = () => { $('clock').textContent = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }).replace(/\s?[AP]M/, '') }
+  tick(); setInterval(tick, 30000)
+  const first = await (await fetch('/phone/thread')).json()
+  seenOut = first.messages.filter((m) => m.dir === 'out').length
+  render(first)
+  poll()
+}
+boot()
+</script>
+</body>
+</html>
