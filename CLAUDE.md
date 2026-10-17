@@ -28,6 +28,7 @@ should move one of: GMV, 3P→1P conversion, repeat rate, AOV, contribution marg
 | `docs/domains.md` | The full map of restaurant domains so nothing is a blind spot |
 | `docs/request-funnel.md` | Message → identity → category → skill or 48h request |
 | `docs/skill-lifecycle.md` | How a skill is born, tested, versioned, promoted and retired |
+| `docs/weekly-bottleneck.md` | One objective, one constraint per week per restaurant, always in $ |
 | `docs/vendors.md` | Every third-party service, cost, and why it is (or isn't) used |
 | `orders-dashboard/` | Demo/clone site used to build and test skills before touching live portals |
 | `browser-exec/`, `harness/` | Hackathon-era modules. Not on the live path; keep until reviewed |
@@ -39,6 +40,10 @@ cd ownerorbit && npm install && npx playwright install chromium
 npm run preflight && npm run server        # Donna on :8787
 ```
 BlueBubbles webhook: `http://localhost:8787/messages/inbound?secret=<BLUEBUBBLES_WEBHOOK_SECRET>`.
+
+## Operating cadence
+Every Monday, per restaurant: run the weekly bottleneck loop (`docs/weekly-bottleneck.md`).
+One active constraint per restaurant, sized in dollars, one action, measured by Sunday.
 
 ## Working agreement for agents
 - Read the restaurant's `profile.md` and the relevant `registry.yaml` entries before acting.

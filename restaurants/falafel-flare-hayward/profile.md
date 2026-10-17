@@ -24,3 +24,7 @@
 
 ## Log of promises (48h requests) and status
 - _none yet_
+
+## Weekly bottleneck log
+| Week | Objective gap | Constraint | Est. $/mo | Action | Result |
+|---|---|---|---|---|---|
